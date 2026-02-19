@@ -59,10 +59,10 @@ export default function VersionAlt() {
         <div className="bg-white w-36 h-36 rounded-full flex justify-center items-center border-black border-2 absolute left-310 top-80">
           <p className="text-black text-xl text-center font-ysabeau font-bold">Consultation à mon cabinet <span className="text-sm">(rajouter icône</span>)</p>
         </div>
-        <div className="bg-white w-36 h-36 rounded-full flex justify-center items-center border-black border-2 absolute left-355 top-95">
+        <div className="bg-white w-36 h-36 rounded-full flex justify-center items-center border-black border-2 absolute left-350 top-80">
           <p className="text-black text-xl text-center font-ysabeau font-bold">Consultation à domicile <span className="text-sm">(rajouter icône</span>)</p>
         </div>
-        <div className="bg-white w-36 h-36 rounded-full flex justify-center items-center border-black border-2 absolute left-390 top-120">
+        <div className="bg-white w-36 h-36 rounded-full flex justify-center items-center border-black border-2 absolute left-390 top-80">
           <p className="text-black text-xl text-center font-ysabeau font-bold">Consultation en visio <span className="text-sm">(rajouter icône</span>)</p>
         </div>
 
