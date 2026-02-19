@@ -10,7 +10,7 @@ const Header = () => {
         <Logo/>
         <HeaderInfo/>
       </div>
-      <Separator className="bg-main-theme my-5" />
+      <Separator className="bg-main-theme mt-5 mb-2.5" />
       <Menu/>
       <Separator className="bg-main-theme" />
     </header>

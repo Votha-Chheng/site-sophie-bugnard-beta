@@ -14,12 +14,12 @@ export default function VersionAlt() {
         <div style={{borderRadius:'50%'}} className="absolute top-0 left-1/2 -translate-x-1/2 w-175 h-120 bg-white">
           <div style={{borderRadius:'50%'}} className="relative w-175 h-120">
             <div className="">
-              <p className="text-7xl text-main-theme tracking-tight font-manrope mt-34 ml-10 italic font-semibold">Mieux manger,</p>
-              <p className="text-[55px] text-main-theme tracking-tight font-manrope font-semibold italic ml-12 mt-4">mieux vivre sa ménopause</p>
-              <sub className="ml-16"> ou (remodeler son alimentation pour soigner les maux de l'âge)</sub>
+              <p className="text-7xl text-main-theme tracking-tight font-manrope mt-36 ml-5 italic font-semibold">Mieux manger,</p>
+              <p className="text-[55px] text-main-theme tracking-tight font-manrope font-semibold italic ml-2.5 mt-2">mieux vivre sa ménopause</p>
+              <sub className="ml-16"> ou (remodeler son alimentation pour soigner les maux de l'âge + rajouter illustrations)</sub>
             </div>
           </div>
-          <div style={{borderRadius:'50%'}} className="absolute top-0 left-1/2 -translate-x-1/2 w-180 h-120 bg-transparent border-8 border-main-theme mt-5 -ml-5 rotate-0"/>
+          <div style={{borderRadius:'50%'}} className="absolute top-0 left-1/2 -translate-x-1/2 w-180 h-120 bg-transparent border-8 border-main-theme mt-5 -ml-4 rotate-0"/>
         </div>
         
         <section className="absolute top-79 left-10 w-full h-full">
