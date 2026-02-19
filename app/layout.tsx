@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/Header";
+import { cormorantInfant, lato, lavishlyYours, manrope, nunito, poiretOne, squarePeg, ysabeau } from "@/utils/fonts";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,10 +25,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html 
+      lang="en" 
+      className={`${poiretOne.variable} ${cormorantInfant.variable} ${nunito.variable} ${squarePeg.variable} ${ysabeau.variable} ${lato.variable} ${manrope.variable} ${lavishlyYours.variable}`} 
+    >
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} relative antialiased min-h-screen w-full bg-tea-green overflow-x-hidden`}
       >
+        <Header/>
         {children}
       </body>
     </html>
