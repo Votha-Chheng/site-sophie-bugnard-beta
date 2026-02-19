@@ -14,8 +14,8 @@ export default function VersionAlt() {
         <div style={{borderRadius:'50%'}} className="absolute top-0 left-1/2 -translate-x-1/2 w-175 h-120 bg-white">
           <div style={{borderRadius:'50%'}} className="relative w-175 h-120">
             <div className="">
-              <p className="text-7xl text-main-theme tracking-tight font-manrope mt-36 ml-5 italic font-semibold">Mieux manger,</p>
-              <p className="text-[55px] text-main-theme tracking-tight font-manrope font-semibold italic ml-2.5 mt-2">mieux vivre sa ménopause</p>
+              <p className="text-7xl text-main-theme tracking-tight font-manrope mt-36 ml-7.5 font-semibold">Bien manger,</p>
+              <p className="text-[55px] text-main-theme tracking-tight font-manrope font-semibold ml-5 mt-2">mieux vivre sa ménopause</p>
               <sub className="ml-16"> ou (remodeler son alimentation pour soigner les maux de l'âge + rajouter illustrations)</sub>
             </div>
           </div>
