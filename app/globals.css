@@ -50,8 +50,15 @@
   --color-main-theme: #006288; 
   --color-side-color: #87001f; 
   --color-tea-green: #cadbc0;
+  --color-frosted-mint: #c4e7d4;
+  --color-dust-grey: #d3d0cb;
   --color-dusty-rose: #cc7e85;
   --color-cotton-rose: #dca7ac;
+  --color-mauve-shadow: #754668;
+  --color-sea-green: #388659;
+  --color-main-bg:#d3d0cb;
+  --color-alabaster-grey:#d8dbe2;
+
 
 }
 @theme {
@@ -62,7 +69,7 @@
   --font-lato: var(--next-font-lato);
   --font-square-peg: var(--next-font-square-peg);
   --font-ysabeau: var(--next-font-ysabeau);
-  --font-manrope: var(--next-font-manrope);
+  --font-hurricane: var(--next-font-hurricane);
 }
 :root {
   --radius: 0.625rem;

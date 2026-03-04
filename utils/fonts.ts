@@ -1,4 +1,4 @@
-import { Cagliostro, Cormorant_Infant, Lato, Lavishly_Yours, Manrope, Nothing_You_Could_Do, Nunito, Poiret_One, Quattrocento_Sans, Square_Peg, Ysabeau } from "next/font/google";
+import { Cagliostro, Cormorant_Infant, Hurricane, Lato, Lavishly_Yours, Manrope, Nothing_You_Could_Do, Nunito, Poiret_One, Quattrocento_Sans, Square_Peg, Ysabeau } from "next/font/google";
 
 export const lavishlyYours = Lavishly_Yours({
   weight: [ "400"],
@@ -49,9 +49,9 @@ export const lato = Lato({
   variable: "--next-font-lato",
 })
 
-export const manrope = Manrope({
-  weight: ["400", "200", "300", "500", "600", "700", "800"],
+export const hurricane = Hurricane({
+  weight: ["400"],
   style: ["normal"],
   subsets: ["latin", "latin-ext"],
-  variable: "--next-font-manrope",
+  variable: "--next-font-hurricane",
 })

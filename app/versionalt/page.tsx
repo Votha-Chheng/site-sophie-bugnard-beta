@@ -1,71 +1,65 @@
 'use client'
 
 import BodyLayout from "@/components/layouts/BodyLayout";
-import SoftFrame from "@/components/svg/SoftFrame";
-import { Separator } from "@/components/ui/separator";
-import { MoveRight } from "lucide-react";
-import Image from "next/image";
+import MainTitle from "@/components/MainTitle";
+import Presentation from "@/components/Presentation";
+import PommeVie from "@/components/svg/PommeVie";
+import TypesConsultation from "@/components/TypesConsultation";
 import Link from "next/link";
+import { ImQuotesLeft, ImQuotesRight } from "react-icons/im";
 
-export default function VersionAlt() {
+export default function Home() {
   return (
-    <div className="relative w-full py-7.5 px-10">
-      <BodyLayout className="">
-        <div style={{borderRadius:'50%'}} className="absolute top-0 left-1/2 -translate-x-1/2 w-175 h-120 bg-white">
-          <div style={{borderRadius:'50%'}} className="relative w-175 h-120">
-            <div className="">
-              <p className="text-7xl text-main-theme tracking-tight font-manrope mt-36 ml-7.5 font-semibold">Bien manger,</p>
-              <p className="text-[55px] text-main-theme tracking-tight font-manrope font-semibold ml-5 mt-2">mieux vivre sa ménopause</p>
-              <sub className="ml-16"> ou (remodeler son alimentation pour soigner les maux de l'âge + rajouter illustrations)</sub>
-            </div>
+    <div className="relative w-full py-12">
+      <BodyLayout className="w-360 min-h-screen mx-auto relative">
+        <Presentation className="top-0 left-0"/>
+        <MainTitle className="-translate-x-1/2 left-1/2 top-0 "/>
+        <TypesConsultation className="top-72 right-2 z-10"/>  
+        <PommeVie height={220} width={550} className="absolute top-64 left-1/2 -translate-x-1/2"/>
+        <div className="absolute left-1/2 -translate-x-1/2 top-125 w-120 text-mauve-shadow text-center pr-10 font-ysabeau text-xl font-bold tracking-wide italic">
+          <div className="relative w-fit mb-3.5">
+            <p>
+              ...à travers une approche personnalisée bienveillante, durable et faite de petits pas solides pour enraciner vos progrès.
+            </p>
+            <ImQuotesLeft className="absolute -top-2.5 left-7.5" size={20}/>
+            <ImQuotesRight className="absolute -bottom-2.5 right-20" size={20} />
           </div>
-          <div style={{borderRadius:'50%'}} className="absolute top-0 left-1/2 -translate-x-1/2 w-180 h-120 bg-transparent border-8 border-main-theme mt-5 -ml-4 rotate-0"/>
+          <Link href="/mon-livre" className="text-white font-ysabeau text-base font-normal bg-main-theme not-italic px-2 py-1 rounded-xl hover:bg-mauve-shadow transition-colors duration-100">
+            Mon approche
+          </Link>
         </div>
-        
-        <section className="absolute top-79 left-10 w-full h-full">
-          <div className="relative">
-            <Image 
-              src={`/jpg/portrait_Sophie_Bugnard-2.jpg`} 
-              alt="Portrait Sophie Bugnard docteure en pharmacie" 
-              width={250} 
-              height={250} 
-              className="absolute z-30 -top-40 left-0 rounded-full border-2 border-white" 
+          {/* <div className="bg-main-theme w-4 h-4 absolute rounded-full left-163 top-64.5"/>
+          <svg className="absolute overflow-visible z-50 -top-38 left-164" viewBox="0 0 100 100" width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+            <ellipse 
+              cx="100" 
+              cy="60" 
+              rx="125" 
+              ry="75"
+              strokeDasharray="205 450"
+              strokeDashoffset="-56"
+              fill="none" 
+              stroke="#006288" 
+              strokeWidth="1.5" 
+              strokeLinecap="round"
             />
-            <SoftFrame fill="#cc7e85" bg="#f2f0ef" width={450} height={320} className="absolute top-10 left-0 z-40" />
-            <div className="z-40 absolute w-120 left-7.5 top-17.5">
-              <p 
-                className="font-poiret-one tracking-wide text-4xl font-bold [text-shadow:0.6px_0_currentColor,-0.6px_0_currentColor,0_0.6px_currentColor,0_-0.6px_currentColor] mb-3.5"
-              >
-                Dr Sophie Bugnard
-              </p>
-              <div className="w-100 mb-2">
-                <Separator className="bg-black" />
-              </div>
-              <ul className={`font-lato font-semibold tracking-wider mb-5 ml-2 mr-2 text-black leading-8 text-xl space-y-2 w-100`} >
-                <li>▸<span className="italic">&nbsp;Conseillère en nutrition sur Montpellier</span></li>
-                <li>▸<span className="italic">&nbsp;Spécialiste du rééquilibrage alimentaire des femmes autour de la ménopause</span></li>
-                <li>▸<span className="italic">&nbsp;Docteure en pharmacie</span></li>
-              </ul>
-              <p className="flex gap-x-2.5 justify-end items-center  w-98">
-                <MoveRight color="#006288"/>
-                <Link href="/contact" className="text-white font-ysabeau bg-main-theme px-2 py-1 rounded-xl hover:bg-dusty-rose transition-colors duration-100">
-                  Qui suis-je ?
-                </Link>
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <div className="bg-white w-36 h-36 rounded-full flex justify-center items-center border-black border-2 absolute left-310 top-80">
-          <p className="text-black text-xl text-center font-ysabeau font-bold">Consultation à mon cabinet <span className="text-sm">(rajouter icône</span>)</p>
-        </div>
-        <div className="bg-white w-36 h-36 rounded-full flex justify-center items-center border-black border-2 absolute left-350 top-80">
-          <p className="text-black text-xl text-center font-ysabeau font-bold">Consultation à domicile <span className="text-sm">(rajouter icône</span>)</p>
-        </div>
-        <div className="bg-white w-36 h-36 rounded-full flex justify-center items-center border-black border-2 absolute left-390 top-80">
-          <p className="text-black text-xl text-center font-ysabeau font-bold">Consultation en visio <span className="text-sm">(rajouter icône</span>)</p>
-        </div>
-
+          </svg> */}
+        {/* <section>
+          <div className="bg-sea-green w-4 h-4 absolute rounded-full left-363 top-64"/>
+          <svg className="absolute overflow-visible z-50 top-45 left-277" viewBox="0 0 100 100" width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+            <ellipse 
+              cx="100" 
+              cy="60" 
+              rx="40" 
+              ry="30"
+              strokeDasharray="150 100"
+              strokeDashoffset="-180"
+              fill="none" 
+              stroke="#388659" 
+              strokeWidth="1.5" 
+              strokeLinecap="round"
+            />
+          </svg>
+        </section> */}
       </BodyLayout>
     </div>
   );
