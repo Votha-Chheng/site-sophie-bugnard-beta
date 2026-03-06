@@ -3,6 +3,7 @@
 import BodyLayout from "@/components/layouts/BodyLayout";
 import MainTitle from "@/components/MainTitle";
 import Presentation from "@/components/Presentation";
+import SubMainTitle from "@/components/SubMainTitle";
 import PommeVie from "@/components/svg/PommeVie";
 import TypesConsultation from "@/components/TypesConsultation";
 import Link from "next/link";
@@ -11,23 +12,12 @@ import { ImQuotesLeft, ImQuotesRight } from "react-icons/im";
 export default function Home() {
   return (
     <div className="relative w-full py-12">
-      <BodyLayout className="w-360 min-h-screen mx-auto relative">
+      <BodyLayout className="w-360 lg:h-189 mx-auto relative">
         <Presentation className="top-0 left-0"/>
         <MainTitle className="-translate-x-1/2 left-1/2 top-0 "/>
         <TypesConsultation className="top-72 right-2 z-10"/>  
-        <PommeVie height={220} width={550} className="absolute top-64 left-1/2 -translate-x-1/2"/>
-        <div className="absolute left-1/2 -translate-x-1/2 top-125 w-120 text-mauve-shadow text-center pr-10 font-ysabeau text-xl font-bold tracking-wide italic">
-          <div className="relative w-fit mb-3.5">
-            <p>
-              ...à travers une approche personnalisée bienveillante, durable et faite de petits pas solides pour enraciner vos progrès.
-            </p>
-            <ImQuotesLeft className="absolute -top-2.5 left-7.5" size={20}/>
-            <ImQuotesRight className="absolute -bottom-2.5 right-20" size={20} />
-          </div>
-          <Link href="/mon-livre" className="text-white font-ysabeau text-base font-normal bg-main-theme not-italic px-2 py-1 rounded-xl hover:bg-mauve-shadow transition-colors duration-100">
-            Mon approche
-          </Link>
-        </div>
+        <PommeVie height={220} width={550} className="absolute top-72 left-1/2 -translate-x-1/2 -ml-4"/>
+        <SubMainTitle className="top-135"/>
           {/* <div className="bg-main-theme w-4 h-4 absolute rounded-full left-163 top-64.5"/>
           <svg className="absolute overflow-visible z-50 -top-38 left-164" viewBox="0 0 100 100" width="400" height="400" xmlns="http://www.w3.org/2000/svg">
             <ellipse 

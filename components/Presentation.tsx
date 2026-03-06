@@ -40,11 +40,11 @@ const Presentation = (props: PresentationProps) => {
               </ul>
               <p className="flex gap-x-12 justify-center items-center w-96">
                 {/* <MoveRight color="#006288"/> */}
-                <Link href="/qui-suis-je" className="text-white font-ysabeau bg-main-theme px-2 py-1 rounded-xl hover:bg-mauve-shadow transition-colors duration-100">
+                <Link href="/qui-suis-je" className="text-white font-ysabeau bg-main-theme px-2.5 py-1 rounded-xl hover:bg-mauve-shadow transition-colors duration-100">
                   Qui suis-je ?
                 </Link>
                 {/* <MoveRight color="#006288"/> */}
-                <Link href="/mon-livre" className="text-white font-ysabeau bg-main-theme px-2 py-1 rounded-xl hover:bg-mauve-shadow transition-colors duration-100">
+                <Link href="/mon-livre" className="text-white font-ysabeau bg-main-theme px-2.5 py-1 rounded-xl hover:bg-mauve-shadow transition-colors duration-100">
                   En savoir plus sur mon livre
                 </Link>
               </p>

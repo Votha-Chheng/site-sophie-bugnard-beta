@@ -8,6 +8,7 @@ type PommeVieProps = {
 
 const PommeVie = (props: PommeVieProps) => {
   const {width=728, height=307, className=""} = props
+  
   return (
     <svg width={width.toString()} height={height.toString()} viewBox="0 0 728 307" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio='none' className={className}>
       <path 
