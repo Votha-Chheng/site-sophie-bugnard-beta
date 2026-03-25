@@ -27,9 +27,9 @@ const Presentation = (props: PresentationProps) => {
             <SoftFrame fill="#006288" bg="#f2f0ef" width={450} height={410} className="absolute top-0 left-0 z-40" />
             <div className="z-40 absolute w-96 left-8 top-9">
               <p 
-                className="font-poiret-one tracking-wider text-2xl font-bold pl-1.5 [text-shadow:0.5px_0_currentColor,-0.5px_0_currentColor,0_0.5px_currentColor,0_-0.5px_currentColor]"
+                className="font-poiret-one tracking-widest text-2xl font-bold pl-1.5 [text-shadow:0.6px_0_currentColor,-0.6px_0_currentColor,0_0.6px_currentColor,0_-0.6px_currentColor]"
               >
-                Dr Sophie Bugnard
+                Sophie Bugnard
               </p>
               <Separator className="bg-black my-2" />
               <ul className={`font-ysabeau font-bold tracking-wide mb-7.5 ml-1 mr-2 text-black leading-8 text-xl w-96`} >

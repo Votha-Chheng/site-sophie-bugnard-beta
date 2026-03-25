@@ -1,4 +1,4 @@
-import { Clock, LocationEdit, MailIcon, MapPin, PhoneCallIcon, SquareParking } from 'lucide-react'
+import { Clock, MailIcon, MapPin, PhoneCallIcon, SquareParking } from 'lucide-react'
 import RDVIcon from './svg/RDVIcon'
 import Link from 'next/link'
 

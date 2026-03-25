@@ -1,20 +1,40 @@
+'use client'
+
 import Link from "next/link"
 import { NavigationMenu, NavigationMenuItem } from "./ui/navigation-menu"
+import { usePathname } from "next/navigation"
 
 const Menu = () => {
+  const pathname = usePathname()
+
   return (
-    <NavigationMenu viewport={true} className={`text-2xl text-main-theme tracking-wider list-none w-full gap-x-16 font-bold pb-3 font-lato`}>
+    <NavigationMenu viewport={true} className={`text-2xl text-main-theme tracking-wider list-none w-full gap-x-16 font-bold pb-3 font-ysabeau`}>
       <NavigationMenuItem>
-        <Link className="hover:bg-main-theme hover:text-tea-green rounded-lg p-2 transition-all duration-150 ease-out" href="/qui-suis-je">Qui suis-je ?</Link>
+        <Link 
+          className={`${pathname === "/qui-suis-je" ? "bg-main-theme text-alabaster-grey text-3xl italic px-2 pt-0.5 pb-1 hover:no-underline":"hover:underline"} underline-offset-4 rounded-lg transition-all duration-150 ease-out`} 
+          href="/qui-suis-je"
+        >
+          Qui suis-je ?
+        </Link>
       </NavigationMenuItem>
       <NavigationMenuItem>
-        <Link className="hover:bg-main-theme hover:text-tea-green rounded-lg p-2 transition-all duration-150 ease-out" href="/mon-approche">Mon approche</Link>
+        <Link 
+          className={`${pathname === "/mon-approche" ? "bg-main-theme text-alabaster-grey text-3xl italic px-2 pt-0.5 pb-1 hover:no-underline":" hover:underline"} underline-offset-4 rounded-lg transition-all duration-150 ease-out`} 
+          href="/mon-approche"
+        >
+          Mon approche
+        </Link>
       </NavigationMenuItem>
       <NavigationMenuItem>
-        <Link className="hover:bg-main-theme hover:text-tea-green rounded-lg p-2 transition-all duration-150 ease-out" href="/tarifs">Tarifs</Link>
+        <Link className={`${pathname === "/tarifs" ? "bg-main-theme text-alabaster-grey text-3xl italic  px-2 pt-0.5 pb-1":"hover:underline"}  underline-offset-4 rounded-lg transition-all duration-150 ease-out`} href="/tarifs">Tarifs</Link>
       </NavigationMenuItem>
       <NavigationMenuItem>
-        <Link className="hover:bg-main-theme hover:text-tea-green rounded-lg p-2 transition-all duration-150 ease-out" href="/mon-livre">Mon livre</Link>
+        <Link 
+          className={`${pathname === "/mon-livre" ? "bg-main-theme text-alabaster-grey text-3xl italic  px-2 pt-0.5 pb-1":"hover:underline"}  underline-offset-4 rounded-lg transition-all duration-150 ease-out`} 
+          href="/mon-livre"
+        >
+          Publications
+        </Link>
       </NavigationMenuItem>
     </NavigationMenu>
   )

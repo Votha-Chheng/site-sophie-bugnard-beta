@@ -1,4 +1,15 @@
-import { Cagliostro, Cormorant_Infant, Hurricane, Lato, Lavishly_Yours, Manrope, Nothing_You_Could_Do, Nunito, Poiret_One, Quattrocento_Sans, Square_Peg, Ysabeau } from "next/font/google";
+import { Cagliostro, Cormorant_Infant, Geist, Geist_Mono, Hurricane, Lato, Lavishly_Yours, Manrope, Nothing_You_Could_Do, Nunito, Poiret_One, Quattrocento_Sans, Square_Peg, Ysabeau } from "next/font/google";
+
+export const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+export const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
 
 export const lavishlyYours = Lavishly_Yours({
   weight: [ "400"],

@@ -12,7 +12,7 @@ const SubMainTitle = (props: SubMainTitleProps) => {
     <div className={`absolute left-1/2 -translate-x-1/2 w-120 text-mauve-shadow text-center pr-10 font-ysabeau text-xl font-bold tracking-wide italic ${className}`}>
       <div className="relative w-fit mb-5">
         <p>
-          ...à travers une approche personnalisée bienveillante, durable et faite de petits pas solides pour enraciner vos progrès.
+          ...à travers une approche personnalisée, bienveillante, et faite de petits pas solides pour enraciner vos progrès.
         </p>
         <ImQuotesLeft className="absolute -top-2.5 left-7.5" size={20}/>
         <ImQuotesRight className="absolute -bottom-2.5 right-20" size={20} />

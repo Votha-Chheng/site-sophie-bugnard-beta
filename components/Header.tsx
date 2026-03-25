@@ -5,14 +5,14 @@ import Menu from './Menu'
 
 const Header = () => {
   return (
-    <header className="sticky top-0 w-full z-100 bg-alabaster-grey pt-2.5">
+    <header className="sticky top-0 w-full z-100 bg-periwinkle">
       <div className='flex items-center w-full justify-between px-5'>
         <Logo/>
         <HeaderInfo/>
       </div>
-      <Separator className="bg-main-theme mt-2.5 mb-2.5" />
+      <Separator className="bg-white mt-2.5 mb-2.5" />
       <Menu/>
-      <Separator className="bg-main-theme" />
+      <Separator className="bg-white" />
     </header>
   )
 }

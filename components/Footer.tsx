@@ -11,7 +11,7 @@ const Footer = () => {
         <span>|</span>
         <Link href="/politique-de-confidentialite">Politique de confidentialité & cookies</Link>
       </div>
-      <div className="w-96 h-px bg-white mx-auto my-2"/>
+      <Separator className="my-2 bg-white" />
       <p className="text-center">&copy; Avril 2026 - Site conçu par Votha Chheng</p>
     </footer>
   )
