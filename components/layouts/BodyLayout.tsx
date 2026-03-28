@@ -6,10 +6,10 @@ type BodyLayoutProps = {
 }
 
 const BodyLayout = (props: BodyLayoutProps) => {
-  const {children, className="w-6xl"} = props
+  const {children, className="w-6xl mt-5 lg:mt-10 xl:mt-0"} = props
 
   return (
-    <main className={`relative mt-5 lg:mt-10 xl:mt-0 mx-auto ${className ?? ''}`}>
+    <main className={`relative mx-auto ${className ?? ''}`}>
       {children}
     </main>
   )

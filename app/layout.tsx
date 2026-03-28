@@ -1,8 +1,11 @@
+
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
 import { cormorantInfant, geistMono, geistSans, hurricane, lato, lavishlyYours, nunito, poiretOne, squarePeg, ysabeau } from "@/utils/fonts";
 import Footer from "@/components/Footer";
+import RootBody from "@/components/RootBody";
+import ColorPicker from "@/components/ColorPicker";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -14,14 +17,18 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
     <html 
       lang="fr" 
       className={`${poiretOne.variable} ${cormorantInfant.variable} ${nunito.variable} ${squarePeg.variable} ${ysabeau.variable} ${lato.variable} ${hurricane.variable} ${lavishlyYours.variable}`} 
     >
-      <body className={`${geistSans.variable} ${geistMono.variable} relative antialiased min-h-screen w-full bg-[#e3d7ff] overflow-x-hidden`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} relative antialiased min-h-screen w-full overflow-x-hidden`}>
         <Header/>
-        {children}
+        <ColorPicker className='top-54 left-5 z-50'/>
+        <RootBody>
+          {children}
+        </RootBody>
         <Footer/>
       </body>
     </html>
