@@ -7,7 +7,7 @@ const Logo = (props: Props) => {
   return (
     <section className="min-w-fit">
       <Link href={`/versionalt`} className={`flex items-center justify-center gap-x-1.5`} >
-        <Image src={`/png/logo-2.png`} className={``}  alt='Logo Sophie Bugnard' width={65} height={65} />
+        <Image src={`/png/logo-3.png`} className={``}  alt='Logo Sophie Bugnard' width={65} height={65} />
         <div className="w-full pt-1">
           <h1 className={`font-cormorant-infant text-main-theme font-bold text-4xl`} >
             Dr Sophie BUGNARD

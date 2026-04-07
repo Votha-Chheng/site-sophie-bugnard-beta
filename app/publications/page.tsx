@@ -4,7 +4,7 @@ const MonLivrePage = () => {
   return (
     <div className="relative w-full py-12">
       <BodyLayout>
-        Mon Livre 
+        Publication
       </BodyLayout>
     </div>
   )

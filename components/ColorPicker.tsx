@@ -16,7 +16,6 @@ const ColorPicker = ({className}: Props) => {
     {name: "cherry blossom", hex: "#f7b2bd"},
     {name: "frozen water", hex: "#e9fff9"},
     {name: "pale slate", hex: "#bdb4bf"},
-    {name: "celadon", hex: "#a0eec0"},
     {name: "powder blue", hex: "#98c1d9"},
     {name: "light cyan", hex: "#e0fbfc"},
     {name: "royal gold", hex: "#f9db6d"},
@@ -24,6 +23,9 @@ const ColorPicker = ({className}: Props) => {
     {name: "lime cream", hex: "#e9eb87"},
     {name: "tea green", hex: "#dde8b9"},
     {name: "soft apricot", hex: "#fcd0a1"},
+    {name: "muted olive", hex: "#aabd8c"},
+    {name: "celadon light", hex: "#b8d8ba"},
+    {name: "celadon lighter", hex: "#baf3d1"},
 
   ]
 
@@ -31,7 +33,6 @@ const ColorPicker = ({className}: Props) => {
 
   return (
     <div className={`${className ?? '' } absolute`}>
-      <p>Choisir couleur de fond</p>
       <div className='p-2 bg-black w-fit space-y-1 rounded-lg'>
         {colors.map((color) => (
           <div 

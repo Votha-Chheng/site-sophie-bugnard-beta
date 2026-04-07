@@ -30,8 +30,8 @@ const Menu = () => {
       </NavigationMenuItem>
       <NavigationMenuItem>
         <Link 
-          className={`${pathname === "/mon-livre" ? "bg-main-theme text-alabaster-grey text-3xl italic  px-2 pt-0.5 pb-1":"hover:underline"}  underline-offset-4 rounded-lg transition-all duration-150 ease-out`} 
-          href="/mon-livre"
+          className={`${pathname === "/publications" ? "bg-main-theme text-alabaster-grey text-3xl italic  px-2 pt-0.5 pb-1":"hover:underline"}  underline-offset-4 rounded-lg transition-all duration-150 ease-out`} 
+          href="/publications"
         >
           Publications
         </Link>

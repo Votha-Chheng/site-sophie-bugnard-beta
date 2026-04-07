@@ -1,7 +1,7 @@
 import { Quote } from "lucide-react"
 import Image from "next/image"
 import { ImQuotesLeft, ImQuotesRight } from "react-icons/im"
-import PageTitle from "./ui/PageTitle"
+import PageTitle from "./PageTitle"
 
 type MainTitleProps = {
   className?: string
