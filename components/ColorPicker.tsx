@@ -26,6 +26,7 @@ const ColorPicker = ({className}: Props) => {
     {name: "muted olive", hex: "#aabd8c"},
     {name: "celadon light", hex: "#b8d8ba"},
     {name: "celadon lighter", hex: "#baf3d1"},
+    {name: "white", hex: "#ffffff"},
 
   ]
 
