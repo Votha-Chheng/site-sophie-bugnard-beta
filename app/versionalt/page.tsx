@@ -1,20 +1,32 @@
 'use client'
 
 import BodyLayout from "@/components/layouts/BodyLayout";
-import MainTitle from "@/components/MainTitle";
 import Presentation from "@/components/Presentation";
 import SubMainTitle from "@/components/SubMainTitle";
 import PommeVie from "@/components/svg/PommeVie";
+import TitleImage from "@/components/TitleImage";
 import TypesConsultation from "@/components/TypesConsultation";
 
 export default function Home() {
   return (
-    <BodyLayout className="w-360 lg:h-189 mx-auto relative py-0 min-h-screen">
-      <Presentation className="top-12 left-0"/>
-      <MainTitle className="-translate-x-1/2 left-1/2 top-14 "/>
-      <TypesConsultation className="top-92 right-5 z-10"/>  
-      <PommeVie height={200} width={500} className="absolute top-92 left-1/2 -translate-x-1/2 -ml-6"/>
-      <SubMainTitle className="top-150"/>
-    </BodyLayout>
+    <div>
+      <TitleImage 
+        title="Remodeler son alimentation pour soulager la ménopause..." 
+        imgURL="/png/accueil-titre.png" 
+        bgPosition="0px -275px" 
+        topBracketClassName="-left-5 top-0" 
+        bottomBracketClassName="-right-5" 
+        twWidth="w-205"
+        twFrameWidth="w-208"
+        topCornerClassName="right-0 top-0"
+        bottomCornerClassName="-left-3 -bottom-7"
+      />
+      <BodyLayout className="w-360 lg:h-189 mx-auto relative py-0 min-h-screen">
+        <Presentation className="-top-2.5 left-0"/>
+        <TypesConsultation className="top-58 right-5 z-10"/>  
+        <PommeVie height={200} width={500} className="absolute top-64 left-1/2 -translate-x-1/2 -ml-6"/>
+        <SubMainTitle className="top-120"/>
+      </BodyLayout>
+    </div>
   );
 }

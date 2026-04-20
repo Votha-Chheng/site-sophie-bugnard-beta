@@ -1,18 +1,19 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
+
 type Props = {}
 
 const Logo = (props: Props) => {
   return (
     <section className="min-w-fit">
-      <Link href={`/versionalt`} className={`flex items-center justify-center gap-x-1.5`} >
-        <Image src={`/png/logo-3.png`} className={``}  alt='Logo Sophie Bugnard' width={65} height={65} />
-        <div className="w-full pt-1">
-          <h1 className={`font-cormorant-infant text-main-theme font-bold text-4xl`} >
+      <Link href={`/versionalt`} className={`flex items-end justify-center gap-x-2 pt-1`} >
+        <Image src={`/svg/logo.svg`} className={``}  alt='Logo Sophie Bugnard' width={50} height={50} />
+        <div className="w-full translate-y-1">
+          <h1 className={`font-cormorant-infant text-blue-logo font-bold text-3xl`} >
             Dr Sophie BUGNARD
           </h1>
-          <h2 className={`font-ysabeau text-mauve-shadow font-bold tracking-wider text-xl`}>Nutrition | Santé | Ménopause</h2>
+          <h2 className={`font-ysabeau text-green-logo font-bold tracking-wide text-xl`}>Nutrition <span className='text-brown-logo'>•</span> Santé <span className='text-brown-logo'>•</span> Ménopause</h2>
         </div>
       </Link>
     </section>

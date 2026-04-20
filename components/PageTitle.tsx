@@ -3,23 +3,41 @@ import { ImQuotesLeft, ImQuotesRight } from 'react-icons/im'
 
 type PageTitleProps = {
   className?: string
-  children: ReactNode
+  title : string
+  twWidth?: string
+  twFrameWidth?: string
+  topBracketClassName?:string
+  bottomBracketClassName?: string
+  topCornerClassName?: string
+  bottomCornerClassName?: string
 }
 
 const PageTitle = (props: PageTitleProps) => {
-  const { className = "top-0 left-0", children } = props
+  const { 
+    title, 
+    className = "top-0 left-0", 
+    twWidth = "w-200", 
+    twFrameWidth = "w-217.5", 
+    topBracketClassName="", 
+    bottomBracketClassName="", 
+    topCornerClassName="", 
+    bottomCornerClassName="" 
+  } = props
 
   return (
-    <section className={`absolute ${className}`}>
-      <div className={`relative text-mauve-shadow font-ysabeau font-bold`}>
-        <div className='absolute -rotate-2 -bottom-10 -left-12 w-36 h-24 rounded-bl-full border-r-transparent border-b-8 border-l-8 border-mauve-shadow'/>
-        <div className='absolute -top-5 -rotate-2 -right-12 w-36 h-24 rounded-tr-full border-t-8 border-r-8 border-mauve-shadow'/>
-        <ImQuotesLeft className="absolute -top-5 -left-14" size={50}/>
-        <ImQuotesRight  className="absolute -bottom-8 -right-14" size={50} />
-        {children}
+    <section className={`${className} absolute top-24 left-1/2 -translate-x-1/2 ${twWidth}`}>
+      <div className={`h-full ${twFrameWidth} absolute bg-white -z-10 -rotate-z-2 rounded-4xl`} />
+      <div className={`${twWidth} h-58 z-20 pt-7.5 pl-14`}>
+        <p className="text-6xl leading-20 font-ysabeau font-bold italic text-green-logo">
+          {title}
+        </p>
+        <ImQuotesLeft color='#419D78' className={`absolute ${topBracketClassName}`} size={50}/>
+        <ImQuotesRight color='#419D78' className={`absolute ${bottomBracketClassName}`} size={50} />
+        <div className={`absolute ${topCornerClassName} -rotate-2 w-32 h-24 rounded-tr-4xl border-t-8 border-r-8 border-brown-logo`} />
+        <div className={`absolute ${bottomCornerClassName} -rotate-z-2  w-32 h-24 rounded-bl-4xl border-r-transparent border-b-8 border-l-8 border-brown-logo`} />
       </div>
     </section>
   )
 }
 
-export default PageTitle
+export default PageTitle 

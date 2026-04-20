@@ -3,7 +3,7 @@ import { Separator } from "./ui/separator"
 
 const Footer = () => {
   return (
-    <footer className="w-full py-2.5 bg-main-theme text-white border-y-white border-y-2 font-nunito">
+    <footer className="w-full py-2.5 bg-green-logo text-white font-bold border-y-white border-y font-nunito">
       <div className="flex justify-center gap-4">
         <Link href="/plan-du-site">Plan du site</Link>
         <span>|</span> 

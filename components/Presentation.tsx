@@ -14,17 +14,17 @@ const Presentation = (props: PresentationProps) => {
   return (
     <section className={`absolute ${className}`}>
       <div className={`relative w-100 h-125 ${className}`}>
-      <div className='absolute top-8 h-52 w-52 rounded-full bg-main-theme'/>
+      <div className='absolute top-8 h-52 w-52 rounded-full bg-blue-logo'/>
         <Image 
           src={`/jpg/portrait_Sophie_Bugnard-2.jpg`} 
           alt="Portrait Sophie Bugnard docteure en pharmacie" 
           width={200} 
           height={200} 
-          className="absolute z-30 top-10 left-0 rounded-full border-8 border-main-theme" 
+          className="absolute z-30 top-10 left-0 rounded-full border-8 border-blue-logo" 
         />
         <div className='absolute top-58 left-0'>
           <article className='relative'>
-            <SoftFrame fill="#006288" bg="#f2f0ef" width={450} height={410} className="absolute top-0 left-0 z-40" />
+            <SoftFrame fill="#3581B8" bg="#f2f0ef" width={450} height={400} className="absolute top-0 left-0 z-40" />
             <div className="z-40 absolute w-96 left-8 top-9">
               <p 
                 className="font-poiret-one tracking-widest text-2xl font-bold pl-1.5 [text-shadow:0.6px_0_currentColor,-0.6px_0_currentColor,0_0.6px_currentColor,0_-0.6px_currentColor]"
@@ -39,13 +39,11 @@ const Presentation = (props: PresentationProps) => {
                 <li>▸<span className="">&nbsp;Autrice du livre <span className='italic underline underline-offset-4 font-semibold'>Les secrets de la longévité en bonne santé</span>,  éd. Lanore</span></li>
               </ul>
               <p className="flex gap-x-12 justify-center items-center w-96">
-                {/* <MoveRight color="#006288"/> */}
-                <Link href="/qui-suis-je" className="text-white font-ysabeau bg-main-theme px-2.5 py-1 rounded-xl hover:bg-mauve-shadow transition-colors duration-100">
+                <Link href="/qui-suis-je" className="text-white font-ysabeau bg-blue-logo px-2.5 py-1 rounded-xl hover:bg-green-logo transition-colors duration-100">
                   Qui suis-je ?
                 </Link>
-                {/* <MoveRight color="#006288"/> */}
-                <Link href="/mon-livre" className="text-white font-ysabeau bg-main-theme px-2.5 py-1 rounded-xl hover:bg-mauve-shadow transition-colors duration-100">
-                  En savoir plus sur mon livre
+                <Link href="/publications" className="text-white font-ysabeau bg-blue-logo px-2.5 py-1 rounded-xl hover:bg-green-logo transition-colors duration-100">
+                  Voir mes publications
                 </Link>
               </p>
             </div>

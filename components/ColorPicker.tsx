@@ -27,13 +27,12 @@ const ColorPicker = ({className}: Props) => {
     {name: "celadon light", hex: "#b8d8ba"},
     {name: "celadon lighter", hex: "#baf3d1"},
     {name: "white", hex: "#ffffff"},
-
   ]
 
   const {updateBgColor} = useColorPickerStore()
 
   return (
-    <div className={`${className ?? '' } absolute`}>
+    <div className={`${className ?? '' } absolute hover:opacity-100 opacity-5`}>
       <div className='p-2 bg-black w-fit space-y-1 rounded-lg'>
         {colors.map((color) => (
           <div 

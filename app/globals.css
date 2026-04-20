@@ -47,7 +47,10 @@
 }
 
 @theme { 
-  --color-main-theme: #006288; 
+  --color-blue-logo: #3581B8;
+  --color-green-logo: #419D78;
+  --color-brown-logo: #9D695A;
+  /* --color-main-theme: #006288; 
   --color-side-color: #87001f; 
   --color-tea-green: #cadbc0;
   --color-frosted-mint: #c4e7d4;
@@ -59,7 +62,7 @@
   --color-main-bg: #d3d0cb;
   --color-alabaster-grey: #d8dbe2;
   --color-frozen-water: #e9fff9;
-  --color-periwinkle: #e3d7ff;
+  --color-periwinkle: #e3d7ff; */
 
 
 }

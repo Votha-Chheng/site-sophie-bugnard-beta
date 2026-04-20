@@ -15,9 +15,9 @@ const Header = () => {
         <Logo/>
         <HeaderInfo/>
       </div>
-      <Separator className="bg-white mt-2.5 mb-2.5" />
+      <Separator className="bg-green-logo mt-2.5 mb-2.5" />
       <Menu/>
-      <Separator className="bg-white" />
+      <Separator className="bg-green-logo" />
     </header>
   )
 }

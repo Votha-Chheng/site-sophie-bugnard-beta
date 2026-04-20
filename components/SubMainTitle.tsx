@@ -9,7 +9,7 @@ const SubMainTitle = (props: SubMainTitleProps) => {
   const { className="" } = props
 
   return (
-    <div className={`absolute left-1/2 -translate-x-1/2 w-120 text-mauve-shadow text-center pr-10 font-ysabeau text-xl font-bold tracking-wide italic ${className}`}>
+    <div className={`absolute left-1/2 -translate-x-1/2 w-120 text-green-logo text-center pr-10 font-ysabeau text-xl font-bold tracking-wide italic ${className}`}>
       <div className="relative w-fit mb-5">
         <p>
           ...à travers une approche personnalisée, bienveillante, et faite de petits pas solides pour enraciner vos progrès.
@@ -19,7 +19,7 @@ const SubMainTitle = (props: SubMainTitleProps) => {
       </div>
       <Link 
         href="/mon-livre" 
-        className="text-white font-ysabeau text-base font-normal bg-main-theme not-italic px-2.5 py-1 rounded-xl hover:bg-mauve-shadow transition-colors duration-100"
+        className="text-white font-ysabeau text-base font-normal bg-main-theme not-italic px-2.5 py-1 rounded-xl hover:bg-green-lotext-green-logo transition-colors duration-100"
       >
         Mon approche
       </Link>
