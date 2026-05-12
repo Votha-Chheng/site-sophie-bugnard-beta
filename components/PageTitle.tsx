@@ -6,10 +6,13 @@ type PageTitleProps = {
   title : string
   twWidth?: string
   twFrameWidth?: string
+  textSizeTw?: string
   topBracketClassName?:string
   bottomBracketClassName?: string
   topCornerClassName?: string
   bottomCornerClassName?: string
+  marginTopTitleTw: string
+  frameHeightTw: string
 }
 
 const PageTitle = (props: PageTitleProps) => {
@@ -21,14 +24,17 @@ const PageTitle = (props: PageTitleProps) => {
     topBracketClassName="", 
     bottomBracketClassName="", 
     topCornerClassName="", 
-    bottomCornerClassName="" 
+    bottomCornerClassName="",
+    textSizeTw = "text-6xl",
+    marginTopTitleTw,
+    frameHeightTw
   } = props
 
   return (
     <section className={`${className} absolute top-24 left-1/2 -translate-x-1/2 ${twWidth}`}>
       <div className={`h-full ${twFrameWidth} absolute bg-white -z-10 -rotate-z-2 rounded-4xl`} />
-      <div className={`${twWidth} h-58 z-20 pt-7.5 pl-14`}>
-        <p className="text-6xl leading-20 font-ysabeau font-bold italic text-green-logo">
+      <div className={`${twWidth} ${frameHeightTw} z-20 pt-7.5 pl-14`}>
+        <p className={`${textSizeTw} ${marginTopTitleTw} leading-20 font-ysabeau font-bold italic text-green-logo`}>
           {title}
         </p>
         <ImQuotesLeft color='#419D78' className={`absolute ${topBracketClassName}`} size={50}/>

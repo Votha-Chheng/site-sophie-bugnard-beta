@@ -67,7 +67,6 @@
 
 }
 @theme {
-  --font-bonheur-royale: var(--next-font-bonheur-royale);
   --font-poiret-one: var(--next-font-poiret-one);
   --font-cormorant-infant: var(--next-font-cormorant-infant);
   --font-nunito: var(--next-font-nunito);

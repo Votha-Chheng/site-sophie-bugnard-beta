@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge"
 import { useState } from "react"
 import TitleImage from "@/components/TitleImage"
 import Image from "next/image"
+import Link from "next/dist/client/link"
 
 const QuiSuisJePage = () => {
   const [hovered, setHovered] = useState<boolean>(false)
@@ -32,20 +33,20 @@ const QuiSuisJePage = () => {
       <BodyLayout className="pb-275">
         <div className="absolute -translate-x-1/2 left-1/2 top-28">
           <section className="flex mt-16 mb-38 justify-between">
-            <div className="relative mb-5 min-w-180 -translate-x-20">
-              <FrameRoundCorner width={810} height={435} className="absolute -top-8 -z-10"/>
-              <p className="bg-white font-ysabeau text-xl text-justify w-145 mt-3 ml-26 indent-3">
-                Conseillère en nutrition à Montpellier, <span className="font-bold">spécialisée dans le ré&shy;équilibrage alimentaire des femmes autour de la ménopause</span>, j’accompagne celles qui souhaitent perdre du poids ou éviter d’en prendre grâce à une alimentation saine, adaptée et personnalisée. 
+            <div className="relative mb-5 min-w-130 -translate-x-20">
+              <FrameRoundCorner width={600} height={425} className="absolute -top-28 -z-10"/>
+              <p className="bg-white font-ysabeau text-xl text-justify w-110 mt-7.5 ml-26 indent-3 leading-7">
+                Conseillère en nutrition à Montpellier, <span className="font-bold">spécialisée dans le ré&shy;équilibrage alimentaire des femmes en période de ménopause</span>, j’accompagne celles qui souhaitent perdre du poids ou éviter d’en pren&shy;dre grâce à une alimentation saine, adaptée et person&shy;nalisée. 
               </p>
-              <p className="bg-white font-ysabeau text-xl text-justify w-160 mt-1.5 ml-18">
+              {/* <p className="bg-white font-ysabeau text-xl text-justify w-160 mt-1.5 ml-18">
                 <span className="font-bold">Forte d'une solide formation en pharmacologie</span>, mon expertise en compléments alimentaires me permet également de proposer des solutions naturelles et sécurisées pour répondre à vos besoins spécifiques.
-              </p>
+              </p> */}
             </div>
-            <div className="flex w-200 gap-x-1.5 -translate-x-16 h-auto">
+            <div className="flex w-230 gap-x-1.5 -translate-x-2 h-auto">
               <div className="min-w-70 h-auto border-8 relative rounded-4xl border-brown-logo overflow-x-hidden">
                 <Image src="/jpg/portrait-sophie-bugnard-4.jpg" fill objectFit="cover" alt="Médicaments"/>
               </div>
-              <ul className="min-w-135 h-auto border-2 border-blue-logo rounded-2xl bg-white font-ysabeau text-xl text-justify px-5 py-3">
+              <ul className="min-w-165 h-auto border-2 border-blue-logo rounded-2xl bg-white font-ysabeau text-xl text-justify px-5 py-3">
                 <p>Les avantages de ma double expertise font que :</p>
                 {/* <li>▶&nbsp;Je possède une vision globale de la santé. </li> */}
                 <li>▶&nbsp;Je suis en capacité de <b>détecter les interactions entre médicaments et compléments alimentaires</b> (certains nutri&shy;ments influencent l’efficacité des traitements).</li>
@@ -146,6 +147,9 @@ const QuiSuisJePage = () => {
                 </div>
                 <p className="text-center text-lg font-bold">2024</p>
               </div>
+              <div className={`${(hoveredExp3 || hoveredExp2) ? "mt-8 w-60" : "w-48 mt-0"} transition-all duration-75 absolute left-290 top-8 -translate-x-1/2 font-ysabeau leading-5 text-center border-black border-2 px-1.5 pb-1.5 rounded-md`}>
+                <Link className="hover:opacity-75" href={`/publications`} >Publication du livre : <br/><span className="font-bold">"Les secrets de la longévité en bonne santé"</span>, éd. Lanore 2024</Link>
+              </div>
               <div 
                 onMouseEnter={()=> setHovered3(true)} 
                 onMouseLeave={()=> setHovered3(false)} 
@@ -160,7 +164,7 @@ const QuiSuisJePage = () => {
             </div>
 
             {/*********************** Badges *****************/}
-            <article className="flex w-full mt-12 mb-10 px-7.5 gap-x-16 items-center">
+            <article className="flex w-full mt-24 mb-10 px-7.5 gap-x-16 items-center">
               <div className="flex gap-x-1">
                 <p className="[writing-mode:vertical-lr] [text-orientation:mixed] rotate-180 font-extrabold font-lato tracking-wide text-3xl text-center">EXP&Eacute;RIENCES</p>
                 <div className="flex flex-col items-start gap-y-5 w-115">

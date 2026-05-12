@@ -11,10 +11,13 @@ type Props = {
   bottomBracketClassName?: string;
   topCornerClassName?: string;
   bottomCornerClassName?: string;
+  textSizeTw?: string;
+  marginTopTitleTw?: string;
+  frameHeightTw?: string;
 }
 
 const TitleImage = (props: Props) => {
-  const {title, imgURL, bgPosition, twWidth, twFrameWidth, topBracketClassName, bottomBracketClassName, topCornerClassName, bottomCornerClassName} = props
+  const {title, imgURL, bgPosition, twWidth, twFrameWidth, topBracketClassName, bottomBracketClassName, topCornerClassName, bottomCornerClassName, textSizeTw, marginTopTitleTw="", frameHeightTw="h-58"} = props
 
   return (
     <section className={`w-full h-64 relative`}>
@@ -29,6 +32,9 @@ const TitleImage = (props: Props) => {
         bottomBracketClassName={bottomBracketClassName} 
         topCornerClassName={topCornerClassName} 
         bottomCornerClassName={bottomCornerClassName} 
+        textSizeTw={textSizeTw}
+        marginTopTitleTw={marginTopTitleTw}
+        frameHeightTw={frameHeightTw}
       />
     </section>
   )

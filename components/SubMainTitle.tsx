@@ -9,13 +9,13 @@ const SubMainTitle = (props: SubMainTitleProps) => {
   const { className="" } = props
 
   return (
-    <div className={`absolute left-1/2 -translate-x-1/2 w-120 text-green-logo text-center pr-10 font-ysabeau text-xl font-bold tracking-wide italic ${className}`}>
+    <div className={`absolute left-1/2 -translate-x-1/2 w-115 text-green-logo text-center pr-10 font-ysabeau text-xl font-bold tracking-wide italic ${className}`}>
       <div className="relative w-fit mb-5">
         <p>
-          ...à travers une approche personnalisée, bienveillante, et faite de petits pas solides pour enraciner vos progrès.
+          J'accompagne les femmes à mieux comprendre leur corps, apaiser les déséquilibres hormonaux et retrouver un bien-être durable grâce à une alimentation adaptée et personnalisée.
         </p>
-        <ImQuotesLeft className="absolute -top-2.5 left-7.5" size={20}/>
-        <ImQuotesRight className="absolute -bottom-2.5 right-20" size={20} />
+        <ImQuotesLeft className="absolute top-0 -left-3.5" size={20}/>
+        <ImQuotesRight className="absolute -bottom-1 right-5" size={20} />
       </div>
       <Link 
         href="/mon-livre" 

@@ -21,10 +21,10 @@ const TypesConsultation = (props: TypesConsultationProps) => {
           <p className='mb-1.5 bg-brown-logo w-fit px-2 py-1 rounded-md italic text-white tracking-wider'>Consultation au choix :</p>
           <ul className='pl-2 space-y-2 text-base'>
             <li className="font-normal bg-white w-fit px-2.5 flex items-center gap-x-1.5 rounded-md border font-nunito">
-              <PiBuildingOfficeBold color='#9D695A' size={16} />À mon cabinet sur Montpellier
+              <PiBuildingOfficeBold color='#9D695A' size={16} />À mon cabinet à Montpellier
             </li>
             <li className="font-normal bg-white w-fit px-2.5 flex items-center gap-x-1.5 rounded-md border font-nunito">
-              <FaHome color='#9D695A' size={16} />À domicile sur Montpellier et sa périphérie
+              <FaHome color='#9D695A' size={16} />À domicile à Montpellier et sa périphérie
             </li>
             <li className="font-normal bg-white w-fit px-2.5 flex items-center gap-x-1.5 rounded-md border font-nunito">
               <Headset color='#9D695A' size={16} />En visio

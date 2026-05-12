@@ -6,7 +6,7 @@ type ColorPickerState = {
 }
 
 export const useColorPickerStore = create<ColorPickerState>((set) => ({
-  bgColor: {name: "frozen water", hex: "#e9fff9"},
+  bgColor: {name: "white", hex: "#ffffff"},
   updateBgColor: (bgColor: {name: string, hex: string}) => {
     set({bgColor})
   },
