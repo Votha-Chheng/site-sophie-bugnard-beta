@@ -12,7 +12,7 @@ const Footer = () => {
         <Link href="/politique-de-confidentialite">Politique de confidentialité & cookies</Link>
       </div>
       <Separator className="my-2 bg-white" />
-      <p className="text-center">&copy; Avril 2026 - Site conçu par Votha Chheng</p>
+      <p className="text-center">Sophie Bugnard &copy; Juin 2026 - Site conçu par Votha Chheng</p>
     </footer>
   )
 }

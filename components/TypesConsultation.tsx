@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import { TbAppleFilled } from 'react-icons/tb'
 import { Button } from './ui/button'
 import { PiBuildingOfficeBold } from 'react-icons/pi'
 import { FaHome } from 'react-icons/fa'

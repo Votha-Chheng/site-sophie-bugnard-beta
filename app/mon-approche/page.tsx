@@ -46,13 +46,13 @@ const MonApprochePage = () => {
               <li className="list-disc"> Vous avez déjà essayé de multiples régimes, du plus restrictif  jusqu'aux « ali&shy;ments à consommer à volonté », mais toujours sans résultats ?</li>
             </ul>
             
-            <p className="my-5 mx-5 px-5 py-2.5 font-cormorant-infant tracking-wide text-[23px] bg-white text-brown-logo text-justify font-bold italic">
+            <p className="my-5 mx-5 px-5 py-2.5 font-ysabeau tracking-wide text-xl text-black bg-white text-justify rounded-xl indent-5">
               <span className="">Il devient impératif de stopper l’effet yo-yo, à terme vous mettez en danger votre santé !</span> En tant que conseillère en nutrition spécialisée dans les <span className="font-extrabold italic">5 facteurs du vivant (concept issu des neurosciences appliquées)</span>, je vous propose de retrouver le plaisir de manger sainement en étant libéré(e) de toute culpabilité et retrouver votre poids santé.
             </p>
           </div>
         </section>
 
-        <section className="mb-12 w-340 mx-auto px-16 -mt-2.5">
+        <section className="mb-12 w-340 mx-auto px-16 mt-0">
           <h2 className="ml-auto font-poiret-one tracking-wide font-bold text-[38px] bg-green-logo text-white w-200 text-right border-x-8 border-t-8 border-green-logo px-5 rounded-t-xl leading-12">
             Choisir de ne plus subir, mais comprendre et agir à la place <span className="font-lato font-normal">!</span>
           </h2>
@@ -81,10 +81,28 @@ const MonApprochePage = () => {
             </div>
           </div>
         </section>
-    </BodyLayout>
+        <section className="mb-12 w-340 mx-auto px-16 -mt-2.5 flex justify-center">
+          <div>
+            <h2 className=" text-center font-poiret-one tracking-wide font-bold text-[38px] py-2 text-white bg-blue-logo rounded-t-xl">Mes spécificités</h2>
+            <div className="bg-blue-logo px-5 pb-5 rounded-b-xl">
+              <ul className="bg-white p-5 font-ysabeau text-xl leading-10 text-justify indent-5 rounded-xl space-y-1 relative overflow-hidden font-bold italic">
+                <Image 
+                  src={`/jpg/pas_de_regime.jpg`} 
+                  alt="Illustration de l'approche de Sophie Bugnard"
+                  className="absolute z-10 opacity-20 object-cover"
+                  fill 
+                /> 
+                <li className="z-20"><span className="text-green-800">✔</span> Pas de régime ni de frustration, mais un rééquilibrage pour une action durable</li>
+                <li className="z-20"><span className="text-green-800">✔</span> Pas de balance ni de calcul de calories</li>
+                <li className="z-20"><span className="text-green-800">✔</span> Disponibilité entre les séances</li>
+                <li className="z-20"><span className="text-green-800">✔</span> Visite à domicile si besoin</li>
+                <li className="z-20"><span className="text-green-800">✔</span> Expertise en tant que pharmacienne diplômée</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </BodyLayout>
     </div>
-
-
   )
 }
 
