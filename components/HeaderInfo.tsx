@@ -4,27 +4,27 @@ import Link from 'next/link'
 
 const HeaderInfo = () => {
   return (
-    <section className='text-blue-logo flex gap-x-8 items-start font-ysabeau text-xl tracking-wide'>
+    <section className={`hd:flex hidden text-blue-logo gap-x-8 items-start font-ysabeau text-xl tracking-wide pt-1.5`}>
       <div className='space-y-1'>
         <div className='flex gap-x-2 font-bold'>
           <PhoneCallIcon color='#9D695A'/> <Link href="tel:0652345678" className='px-2 rounded-lg bg-blue-logo text-white font-semibold italic'>06 52 34 56 78</Link >
         </div>
         <div className='flex gap-x-2 font-semibold'>
-          <MailIcon color='#9D695A'/>  <Link href="mailto:contact@exemple.com" className='px-2 rounded-lg bg-blue-logo text-white font-semibold italic'>contact@exemple.com</Link >
+          <MailIcon color='#9D695A'/>  <Link href="mailto:sofibug@gmail.com" className='px-2 rounded-lg bg-blue-logo text-white font-semibold italic'>sofibug@gmail.com</Link >
         </div>
       </div>
       <div className='flex gap-x-2 font-bold'>
-        <MapPin color='#9D695A'/> 123 Rue de la Santé, <br/>34 000 Montpellier
+        <MapPin color='#9D695A'/> 770 rue de la Roqueturière, <br/>34 090 Montpellier
       </div>
       <div className='flex gap-x-2 font-bold'>
         <Clock color='#9D695A'/> Lundi au vendredi <br/> 9h - 18h
       </div>
       <div className='flex gap-x-2 font-bold'>
-        <SquareParking color='#9D695A'/> Parking gratuit<br/> sur place
+        <SquareParking color='#9D695A'/> Parking gratuit sur place
       </div>
-      <div className='flex gap-x-2'>
+      <div className='flex gap-x-2 ma-w-fit'>
         <RDVIcon stroke='#9D695A' width={30} height={30}/>
-        <Link href="/rdv" className='px-2 py-1 rounded-lg bg-blue-logo text-white font-semibold italic'>
+        <Link href="/rdv" className='px-2 py-1 rounded-lg bg-blue-logo text-white font-semibold italic w-fit whitespace-nowrap'>
           Demander un RDV
         </Link>
       </div>

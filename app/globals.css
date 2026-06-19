@@ -3,6 +3,12 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@theme {
+  /* Modifier les tailles existantes */
+  --breakpoint-hd: 1570px;
+  --breakpoint-medium: 1150px;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -50,22 +56,8 @@
   --color-blue-logo: #3581B8;
   --color-green-logo: #419D78;
   --color-brown-logo: #9D695A;
-  /* --color-main-theme: #006288; 
-  --color-side-color: #87001f; 
-  --color-tea-green: #cadbc0;
-  --color-frosted-mint: #c4e7d4;
-  --color-dust-grey: #d3d0cb;
-  --color-dusty-rose: #cc7e85;
-  --color-cotton-rose: #dca7ac;
-  --color-mauve-shadow: #754668;
-  --color-sea-green: #388659;
-  --color-main-bg: #d3d0cb;
-  --color-alabaster-grey: #d8dbe2;
-  --color-frozen-water: #e9fff9;
-  --color-periwinkle: #e3d7ff; */
-
-
 }
+
 @theme {
   --font-poiret-one: var(--next-font-poiret-one);
   --font-cormorant-infant: var(--next-font-cormorant-infant);

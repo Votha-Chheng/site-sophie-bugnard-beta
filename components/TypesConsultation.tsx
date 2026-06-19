@@ -9,7 +9,9 @@ type TypesConsultationProps = {
 }
 
 const TypesConsultation = (props: TypesConsultationProps) => {
+
   const {className = ""} = props
+  
   return (
     <section className={`absolute ${className}`}>
       <div className="-z-10 border-2 border-brown-logo rounded-sm bg-white">

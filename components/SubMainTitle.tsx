@@ -12,7 +12,7 @@ const SubMainTitle = (props: SubMainTitleProps) => {
     <div className={`absolute left-1/2 -translate-x-1/2 w-115 text-green-logo text-center pr-10 font-ysabeau text-xl font-bold tracking-wide italic ${className}`}>
       <div className="relative w-fit mb-5">
         <p>
-          J'accompagne les femmes à mieux comprendre leur corps, apaiser les déséquilibres hormonaux et retrouver un bien-être durable grâce à une alimentation adaptée et personnalisée.
+          J'accompagne les femmes et les aide à mieux comprendre leur corps, apaiser les déséquilibres hormonaux et retrouver un bien-être durable grâce à une alimentation adaptée et personnalisée.
         </p>
         <ImQuotesLeft className="absolute top-0 -left-3.5" size={20}/>
         <ImQuotesRight className="absolute -bottom-1 right-5" size={20} />

@@ -4,12 +4,12 @@ type SoftFrameProps = {
   fill: string;
   bg?: string;
   width: number;
-  height: number;
+  height?: number;
   className?: string;
 }
 
 const SoftFrame = (props: SoftFrameProps) => {
-  const {fill, bg = "#FFFFFF", width, height, className=""} = props;
+  const {fill, bg = "#FFFFFF", width, height=100, className=""} = props;
  
   return (
     <svg className={`absolute top-0 left-0 -z-10 ${className}`} width={width} height={height} viewBox="0 0 708 372" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio='none'>

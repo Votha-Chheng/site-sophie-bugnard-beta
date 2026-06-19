@@ -25,7 +25,7 @@ const PageTitle = (props: PageTitleProps) => {
     bottomBracketClassName="", 
     topCornerClassName="", 
     bottomCornerClassName="",
-    textSizeTw = "text-6xl",
+    textSizeTw = "text-5xl hd:text-6xl",
     marginTopTitleTw,
     frameHeightTw
   } = props
