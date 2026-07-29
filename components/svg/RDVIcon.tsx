@@ -2,10 +2,11 @@ type RDVIconProps = {
   width?: string | number
   height?: string | number
   stroke?: string
+  className?: string
 }
 
 const RDVIcon = (props: RDVIconProps) => {
-  const { width = "24", height = "24", stroke= "#ffffff" } = props
+  const { width = "24", height = "24", stroke= "#ffffff", className="" } = props
 
   return (
     <svg 
@@ -20,6 +21,7 @@ const RDVIcon = (props: RDVIconProps) => {
       strokeLinejoin="round"
       aria-label="Calendar with at sign" 
       role="img"
+      className={className}
     >
 
       <defs>

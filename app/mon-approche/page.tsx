@@ -1,15 +1,17 @@
 'use client'
 
 import BodyLayout from "@/components/layouts/BodyLayout"
+import MonApprocheResponsive from "@/components/responsive/MonApprocheResponsive";
+import PageTitlePhone from "@/components/responsive/PageTitlePhone";
 import TitleImage from "@/components/TitleImage"
 import Image from "next/image";
-import { CiWarning } from "react-icons/ci"
 
 const MonApprochePage = () => {
   return (
     <div>
       <TitleImage
-        title="Mieux manger pour bien vivre."
+        //title="Mieux manger pour bien vivre."
+        title="Mieux manger, mieux vivre."
         imgURL="/jpg/accueil-titre.jpg" 
         bgPosition="0px -350px" 
         twWidth="w-212" 
@@ -18,10 +20,16 @@ const MonApprochePage = () => {
         bottomBracketClassName="-right-3 -bottom-2.5"
         topCornerClassName="-top-1.5 right-1.5"
         bottomCornerClassName="-bottom-7.5 -left-3"
-        marginTopTitleTw="mt-7.5"
+        marginTopTitleTw="mt-8"
         frameHeightTw="h-48"
       />
-      <BodyLayout className="min-h-screen">
+      <PageTitlePhone 
+        imgURL="/jpg/accueil-titre.jpg" 
+        bgPosition="0px -50px" 
+        title="Mieux manger, mieux vivre."
+      />
+      <MonApprocheResponsive/>
+      <BodyLayout className="min-h-screenb small:block hidden">
         {/* <section className="mt-28 w-360 mx-auto">
           <h2 className="font-bold text-xl flex items-center gap-x-2"><CiWarning/>Accentuer la spécialisation sur la ménopause</h2>
           <p className="my-5">
@@ -29,26 +37,58 @@ const MonApprochePage = () => {
           </p>
           
         </section> */}
-        <section className="w-360 mx-auto mt-16 flex justify-center items-center">
-          <div className="relative ml-12">
+        {/* Vous ne vous reconnaissez plus tout à fait ? Fatigue persistante, sommeil perturbé, variations de poids, bouffées de chaleur, sautes d'humeur... La préménopause et la ménopause peuvent bouleverser votre quotidien et votre confiance en vous. */}
+
+        {/* Spécialisée en nutrition féminine, je vous accompagne avec une approche personnalisée pour mieux comprendre les changements de votre corps et retrouver un équilibre durable. Ensemble, nous mettons en place des solutions adaptées à votre mode de vie afin de soulager les symptômes hormonaux, retrouver votre vitalité et vous permettre de vivre cette étape avec sérénité.
+
+        Parce que chaque femme est unique, votre accompagnement l'est aussi.
+
+        
+
+        ET
+
+        
+
+        La préménopause et la ménopause sont des périodes de transition qui méritent une attention particulière. Pourtant, de nombreuses femmes traversent ces changements en se sentant incomprises, fatiguées ou déconnectées de leur corps.
+
+        Je vous propose un accompagnement nutritionnel sur mesure pour vous aider à retrouver énergie, équilibre hormonal et bien-être au quotidien. Grâce à une approche personnalisée, bienveillante et fondée sur les dernières connaissances en nutrition, vous pourrez reprendre confiance en votre corps et aborder cette nouvelle étape de votre vie avec sérénité et élégance.
+
+        Offrez-vous l'accompagnement que vous méritez. */}
+        <section className="w-360 mx-auto mt-28 flex justify-center mb-10">
+          <div className="relative ml-12 mt-5">
             <div className="w-full h-full bg-linear-to-r from-transparent via-white/5 to-white absolute" />
-              <Image 
-                src={`/jpg/food-problems-3.jpg`} 
-                alt="Illustration de l'approche de Sophie Bugnard" 
-                width={300} 
-                height={300} 
-                className="rounded-xl" 
-              />
+            <Image 
+              src={`/jpg/food-problems-3.jpg`} 
+              alt="Illustration de l'approche de Sophie Bugnard" 
+              width={500} 
+              height={500} 
+              className="rounded-xl" 
+            />
           </div>
-          <div className="w-full bg-brown-logo py-3.5 text-gray-100 self-center rounded-md -translate-x-5">
-            <ul className="text-2xl pl-5 mx-7.5 font-poiret-one list-decimal space-y-3.5 font-bold tracking-wide">
-              <li className="list-disc">Vous désirez perdre du poids et vous ne savez pas par où commencer ?</li>
-              <li className="list-disc"> Vous avez déjà essayé de multiples régimes, du plus restrictif  jusqu'aux « ali&shy;ments à consommer à volonté », mais toujours sans résultats ?</li>
+          <div className="w-full bg-brown-logo py-3.5 text-gray-100 self-center rounded-md mb-10 -translate-x-5">
+            <ul className="text-2xl pl-5 mx-7.5 font-ysabeau list-decimal space-y-3.5 tracking-wide">
+              <li className="list-disc">
+                <span className="font-bold italic">Fatigue persistante</span>, <span className="font-bold  italic">sommeil perturbé</span>, <span className="font-bold  italic">variations de poids</span>, <span className="font-bold  italic">bouffées de chaleur</span>, <span className="font-bold  italic">sautes d'humeur</span>... La préménopause et la ménopause peuvent bouleverser votre quotidien et votre confiance en vous.</li>
+              <li className="list-disc"> 
+                Ces périodes de transition méritent une attention particulière. <span className="font-bold italic">Pourtant, de nombreuses femmes traversent ces changements en se sentant incomprises, fatiguées ou déconnectées de leur corps.</span>
+              </li>
+              {/* <li className="list-disc">Vous désirez perdre du poids et vous ne savez pas par où commencer ?</li>  */}
+              <li className="list-disc">
+                <span className="font-bold italic">&Agrave; l'aide d'un accompagnement nutritionnel sur mesure, bienveillant et fondé sur les dernières connaissances en nutrition</span>, retrouver son énergie, son équilibre hormonal et son bien-être au quotidien redeviennent possibles. <span className="font-bold italic">Reprenez confiance en votre corps pour aborder cette nouvelle étape de votre vie avec sérénité et élégance.</span>
+                {/* Je vous propose un accompagnement nutritionnel sur mesure pour vous aider à retrouver énergie, équilibre hormonal et bien-être au quotidien. Grâce à une approche personnalisée, bienveillante et fondée sur les dernières connaissances en nutrition, vous pourrez reprendre confiance en votre corps et aborder cette nouvelle étape de votre vie avec sérénité et élégance. */}
+              </li>
+              {/* <li className="list-disc">Vous désirez perdre du poids et vous ne savez pas par où commencer ?</li>
+              <li className="list-disc"> Vous avez déjà essayé de multiples régimes, du plus restrictif  jusqu'aux « ali&shy;ments à consommer à volonté », mais toujours sans résultats ?</li> */}
             </ul>
             
-            <p className="my-5 mx-5 px-5 py-2.5 font-ysabeau tracking-wide text-xl text-black bg-white text-justify rounded-xl indent-5">
-              <span className="">Il devient impératif de stopper l’effet yo-yo, à terme vous mettez en danger votre santé !</span> En tant que conseillère en nutrition spécialisée dans les <span className="font-extrabold italic">5 facteurs du vivant (concept issu des neurosciences appliquées)</span>, je vous propose de retrouver le plaisir de manger sainement en étant libéré(e) de toute culpabilité et retrouver votre poids santé.
+            <p className="my-5 mx-5 px-5 py-2.5 tracking-wide text-xl text-black bg-white text-justify rounded-xl indent-5 font-lato leading-8">
+              <span className="font-bold italic">Spécialisée en nutrition hormonale et métabolisme féminin</span>, mon rôle à vos côtés sera de vous aider à <span className="font-bold italic">mieux comprendre les changements métaboliques qui affectent votre corps</span>, puis à retrouver un équilibre métabolique durable. Ensemble, nous mettrons en place des solutions adaptées à votre mode de vie pour soulager les symptômes hormonaux et retrouver votre vitalité. <span className="font-bold italic">Parce que chaque femme est unique, votre accompagnement l'est aussi.</span>
+              
+              {/* <span className="">Il devient impératif de stopper l’effet yo-yo, à terme vous mettez en danger votre santé !</span> En tant que conseillère en nutrition spécialisée dans les <span className="font-extrabold italic">5 facteurs du vivant (concept issu des neurosciences appliquées)</span>, je vous propose de retrouver le plaisir de manger sainement en étant libéré(e) de toute culpabilité et retrouver votre poids santé. */}
             </p>
+             <p className="text-center font-ysabeau tracking-wide text-white text-4xl my-8 font-bold italic">
+              Offrez-vous l'accompagnement que vous méritez !
+             </p>
           </div>
         </section>
 

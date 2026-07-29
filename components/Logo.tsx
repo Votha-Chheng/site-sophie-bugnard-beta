@@ -6,7 +6,7 @@ type Props = {}
 
 const Logo = (props: Props) => {
   return (
-    <section className="min-w-fit mx-auto hd:mx-0 hd:block hidden">
+    <section className="min-w-fit phone:mx-auto mx-0 hd:mx-0 hd:block hidden">
       <Link href={`/versionalt`} className={`flex items-end justify-center gap-x-2 pt-0 hd:pt-1`} >
         <Image src={`/svg/logo.svg`} alt='Logo Sophie Bugnard' width={50} height={50} />
         <div className="w-full">
@@ -18,7 +18,7 @@ const Logo = (props: Props) => {
         </div>
       </Link>
     </section>
-  )
+  ) 
 }
 
 export default Logo

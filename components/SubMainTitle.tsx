@@ -17,12 +17,12 @@ const SubMainTitle = (props: SubMainTitleProps) => {
         <ImQuotesLeft className="absolute top-0 -left-3.5" size={20}/>
         <ImQuotesRight className="absolute -bottom-1 right-5" size={20} />
       </div>
-      <Link 
+      {/* <Link 
         href="/mon-livre" 
         className="text-white font-ysabeau text-base font-normal bg-main-theme not-italic px-2.5 py-1 rounded-xl hover:bg-green-lotext-green-logo transition-colors duration-100"
       >
         Mon approche
-      </Link>
+      </Link> */}
     </div>
   )
 }

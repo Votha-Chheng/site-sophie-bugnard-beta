@@ -4,8 +4,9 @@ import "./globals.css";
 import { cormorantInfant, geistMono, geistSans, hurricane, lato, lavishlyYours, nunito, poiretOne, squarePeg, ysabeau } from "@/utils/fonts";
 import Footer from "@/components/Footer";
 import RootBody from "@/components/RootBody";
-import ColorPicker from "@/components/ColorPicker";
 import Header from "@/components/Header";
+import IconsInfosList from "@/components/IconsInfosList";
+import MenuResponsive from "@/components/responsive/MenuResponsive";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,7 +26,10 @@ export default function RootLayout({
     >
       <body className={`${geistSans.variable} ${geistMono.variable} relative antialiased min-h-screen w-full overflow-x-hidden`}>
         <Header/>
-        {/* <ColorPicker className='top-54 left-5 z-50'/> */}
+        <div className="relative">
+          <MenuResponsive/>
+          <IconsInfosList/>
+        </div>
         <RootBody>
           {children}
         </RootBody>

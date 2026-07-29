@@ -8,7 +8,7 @@ type Props = {}
 
 const HeaderInfoLaptop = (props: Props) => {
   return (
-    <section className={`hd:hidden flex text-blue-logo gap-x-10 items-start justify-center font-ysabeau tracking-wide w-full px-5`}>
+    <section className={`hd:hidden medium:flex hidden text-blue-logo gap-x-10 items-start justify-center font-ysabeau tracking-wide w-full px-5`}>
       <div className='space-y-1'>
         <div className='flex gap-x-2 font-bold'>
           <PhoneCallIcon color='#9D695A'/> <Link href="tel:0652345678" className='px-2 rounded-lg bg-blue-logo text-white font-semibold italic'>06 52 34 56 78</Link >

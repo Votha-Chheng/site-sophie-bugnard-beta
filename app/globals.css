@@ -6,7 +6,9 @@
 @theme {
   /* Modifier les tailles existantes */
   --breakpoint-hd: 1570px;
-  --breakpoint-medium: 1150px;
+  --breakpoint-medium: 1240px;
+  --breakpoint-small: 875px;
+  --breakpoint-phone: 596px;
 }
 
 @theme inline {

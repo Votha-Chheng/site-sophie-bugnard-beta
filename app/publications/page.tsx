@@ -1,6 +1,6 @@
 import BodyLayout from "@/components/layouts/BodyLayout"
 import TitleImage from "@/components/TitleImage"
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, NewspaperIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { ImBook } from "react-icons/im";
@@ -71,6 +71,19 @@ const MonLivrePage = () => {
                   <Image src="/png/cultura-logo.png" alt="Logo Cultura" className="hover:scale-110 transition-transform duration-200" width={140} height={50} />
                 </Link>
               </div>
+            </div>
+          </div>
+        </section>
+
+        <section className={`my-16 border-2 border-green-logo rounded-xl bg-white py-7.5 px-5 flex gap-x-10`}>
+          <div className='font-semibold min-w-3/5 pl-3.5 font-ysabeau -rotate-1'>
+            <div className="flex items-center gap-x-2 mb-2">
+              <NewspaperIcon className="text-green-logo" size={34} />
+              <p className='bg-blue-logo w-fit px-2 py-1 rounded-md text-white tracking-wider text-xl'>Interview et regard d'experte pour un article intitulé <span className="font-bold italic">Les Zones bleues</span>, par Élisabeth de LA MORANDIÈRE</p>
+            </div>
+            <p className='bg-brown-logo w-fit px-2 py-1 rounded-md text-white tracking-wider text-base italic font-lato font-normal self-end'>Top santé magazine n°428 (03/04/2026)</p>
+            <div className="flex gap-x-3.5">
+              <Image src="/jpg/article-top-sante-small.jpg" alt="Couverture du livre" width={750} height={750} className="mt-4" />
             </div>
           </div>
         </section>
