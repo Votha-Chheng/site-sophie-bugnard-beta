@@ -10,7 +10,7 @@ const MonLivrePage = () => {
   return (
     <div>
       <TitleImage
-        title="Une étude sur les zones bleues..."
+        title="Les secrets de la longévité en bonne santé"
         imgURL="/jpg/publications-titre.jpg" 
         bgPosition="0px -500px" 
         twWidth="w-220" 
