@@ -23,9 +23,9 @@ const PresentationPhone = (props: Props) => {
               Sophie Bugnard
             </p>
             <Image 
-              src={`/jpg/portrait_Sophie_Bugnard-2.jpg`} 
+              src={`/jpg/portrait-sophie-bugnard-square.jpeg`} 
               alt="Portrait Sophie Bugnard docteure en pharmacie" 
-              width={100} 
+              width={105} 
               height={100} 
               className="rounded-full border-8 border-blue-logo hd:hidden block -mr-4" 
             />

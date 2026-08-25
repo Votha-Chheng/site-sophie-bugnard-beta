@@ -13,13 +13,13 @@ const Presentation = (props: PresentationProps) => {
   return (
     <section className={`absolute ${className}`}>
       <div className={`relative w-100 h-125 ${className}`}>
-      <div className='absolute top-8 -left-14 h-55 w-55 rounded-full bg-blue-logo hd:block hidden'/>
+        <div className='absolute top-10 left-0 h-50 w-50 rounded-full bg-blue-logo hd:block hidden'/>
         <Image 
-          src={`/jpg/portrait_Sophie_Bugnard-2.jpg`} 
+          src={`/jpg/portrait-sophie-bugnard-square.jpeg`} 
           alt="Portrait Sophie Bugnard docteure en pharmacie" 
-          width={220} 
-          height={220} 
-          className="absolute z-30 -left-14 top-10 rounded-full border-8 border-blue-logo hd:block hidden" 
+          width={196} 
+          height={196} 
+          className="absolute z-30 left-0 top-10.5 rounded-full border-8 border-blue-logo hd:block hidden" 
         />
         <div className='absolute top-58 left-0'>
           <article className='relative'>
@@ -30,7 +30,7 @@ const Presentation = (props: PresentationProps) => {
                   Sophie Bugnard
                 </p>
                 <Image 
-                  src={`/jpg/portrait_Sophie_Bugnard-2.jpg`} 
+                  src={`/jpg/portrait-sophie-bugnard-square.jpeg`} 
                   alt="Portrait Sophie Bugnard docteure en pharmacie" 
                   width={100} 
                   height={100} 

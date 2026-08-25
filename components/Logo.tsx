@@ -11,9 +11,9 @@ const Logo = (props: Props) => {
         <Image src={`/svg/logo.svg`} alt='Logo Sophie Bugnard' width={50} height={50} />
         <div className="w-full">
           <h1 className={`font-cormorant-infant text-blue-logo font-bold text-3xl translate-y-1`} >
-            Dr Sophie BUGNARD
+            Sophie BUGNARD
           </h1>
-          <h2 className={`font-ysabeau text-brown-logo font-bold tracking-tight text-base`}>Conseillère nutrition spécialiste de la ménopause</h2>
+          <h2 className={`font-ysabeau text-brown-logo font-bold tracking-tight text-base`}>Experte en nutrition, santé féminine & ménopause</h2>
           {/* <h2 className={`font-ysabeau text-green-logo font-bold tracking-wide text-xl`}>Nutrition <span className='text-brown-logo'>•</span> Santé <span className='text-brown-logo'>•</span> Ménopause</h2> */}
         </div>
       </Link>
