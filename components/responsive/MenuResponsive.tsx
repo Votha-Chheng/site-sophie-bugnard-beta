@@ -17,7 +17,7 @@ function MenuResponsive({ className }: Props) {
   }
 
   return (
-    <nav className={`${className} ${open ? "translate-y-0" : "-translate-y-full"} transition-transform duration-150 phone:hidden w-full h-full fixed z-50`}>
+    <nav className={`${className} ${open ? "translate-y-0" : "-translate-y-full"} transition-transform duration-150 small:hidden w-full h-full fixed z-50`}>
       <ul className="bg-green-logo py-2.5 gap-y-1.5 flex flex-col items-center w-full font-ysabeau text-lg border-b-2 border-white">
         <li className={`${menuFocused === "mon-approche" ? "bg-gray-400" : "bg-transparent"} px-5 text-white font-bold text-center rounded-md`}><Link href="/mon-approche" onClick={openMenu} onFocus={() => setMenuFocused("mon-approche")}>Mon approche</Link></li>
         <li className={`${menuFocused === "qui-suis-je" ? "bg-gray-400" : "bg-transparent"} px-5 text-white font-bold text-center rounded-md`}><Link href="/qui-suis-je" onClick={openMenu} onFocus={() => setMenuFocused("qui-suis-je")}>Qui suis-je ?</Link></li>

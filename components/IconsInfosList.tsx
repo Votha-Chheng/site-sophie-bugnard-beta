@@ -2,18 +2,27 @@
 
 import { Clock, MailIcon, MapPin, PhoneCallIcon, SquareParking } from 'lucide-react';
 import Link from 'next/link';
-import { useRef, useState } from 'react'
+import { useRef } from 'react'
 import RDVIcon from './svg/RDVIcon';
 import { useMenuResponsiveStore } from '@/stores/MenuResponsiveStore';
+import { useOnClickOutside } from '@/hooks/useOnClickOutside';
+
 
 const IconsInfosList = () => {
-  const {infosOpen, openInfos, selectedIcon, setSelectedIcon} = useMenuResponsiveStore();
-  const iconListRef = useRef<HTMLDivElement>(null);
+  const {infosOpen, openInfos, selectedIcon, setSelectedIcon, closeInfos} = useMenuResponsiveStore();
+  const iconListRef = useRef<HTMLDivElement|null>(null);
+
+  const handler = ()=> {
+    closeInfos();
+    setSelectedIcon(null);
+  }
+
+  useOnClickOutside(iconListRef, handler); 
   
   return (
-    <section className={`phone:hidden relative`} ref={iconListRef}>      
-      <div className={`${!infosOpen ? "bg-transparent translate-y-0 -z-10" : "bg-green-logo translate-y-full z-999"} absolute top-0 left-0 w-full h-full transition-all duration-150`}>
-        <div className={`h-12 flex justify-center pt-1.5`}>
+    <section className={`medium:hidden relative`}>      
+      <div className={`${!infosOpen ? "bg-transparent translate-y-0 -z-10" : "bg-blue-logo translate-y-full z-50"} absolute top-0 left-0 w-full h-full transition-all duration-150`}>
+        <div className={`h-12 flex justify-center pt-1.5`} ref={iconListRef}>
           {
             selectedIcon === "phone"
             ?
@@ -46,9 +55,9 @@ const IconsInfosList = () => {
         <div className={`${selectedIcon ?"block" : "hidden"} h-screen w-full bg-transparent`} onClick={() => setSelectedIcon(null)}/>
       </div>
 
-      <div className={`flex w-full bg-green-logo py-1 justify-between px-5 items-center relative`}>
+      <div className={`flex w-full bg-blue-logo py-1 justify-between px-5 items-center relative`}>
         <div 
-          className={`${selectedIcon === 'phone' ?'bg-white' : 'bg-green-logo'} p-1 rounded-xl transition-all duration-150`} 
+          className={`${selectedIcon === 'phone' ?'bg-white' : 'bg-blue-logo'} p-1 rounded-xl transition-all duration-150`} 
           onClick={() => {
             openInfos();
             setSelectedIcon(selectedIcon === 'phone' ? null : 'phone')
@@ -58,7 +67,7 @@ const IconsInfosList = () => {
         </div>
 
         <div 
-          className={`${selectedIcon === 'mail' ? 'bg-white' : 'bg-green-logo'} p-1 rounded-xl `} 
+          className={`${selectedIcon === 'mail' ? 'bg-white' : 'bg-blue-logo'} p-1 rounded-xl `} 
           onClick={() => {
             openInfos();
             setSelectedIcon(selectedIcon === 'mail' ? null : 'mail')
@@ -66,28 +75,28 @@ const IconsInfosList = () => {
           <MailIcon color={selectedIcon === 'mail' ? '#9D695A' : '#ffffff'} className='cursor-pointer'/>
         </div>
 
-        <div className={`${selectedIcon === 'map' ? 'bg-white' : 'bg-green-logo'} p-1 rounded-xl `} onClick={() => {
+        <div className={`${selectedIcon === 'map' ? 'bg-white' : 'bg-blue-logo'} p-1 rounded-xl `} onClick={() => {
           openInfos();
           setSelectedIcon(selectedIcon === 'map' ? null : 'map')
         }}>
           <MapPin color={selectedIcon === 'map' ? '#9D695A' : '#ffffff'} className='cursor-pointer'/> 
         </div>
 
-        <div className={`${selectedIcon === 'clock' ? 'bg-white' : 'bg-green-logo'} p-1 rounded-xl `} onClick={() => {
+        <div className={`${selectedIcon === 'clock' ? 'bg-white' : 'bg-blue-logo'} p-1 rounded-xl `} onClick={() => {
           openInfos();
           setSelectedIcon(selectedIcon === 'clock' ? null : 'clock')
         }}>
           <Clock color={selectedIcon === 'clock' ? '#9D695A' : '#ffffff'} className='cursor-pointer'/> 
         </div>
 
-        <div className={`${selectedIcon === 'parking' ? 'bg-white' : 'bg-green-logo'} p-1 rounded-xl `} onClick={() => {
+        <div className={`${selectedIcon === 'parking' ? 'bg-white' : 'bg-blue-logo'} p-1 rounded-xl `} onClick={() => {
           openInfos();
           setSelectedIcon(selectedIcon === 'parking' ? null : 'parking')
         }}>
           <SquareParking color={selectedIcon === 'parking' ? '#9D695A' : '#ffffff'} className='cursor-pointer'/>
         </div>
 
-        <div className={`${selectedIcon === 'rdv' ? 'bg-white' : 'bg-green-logo'} p-1 rounded-xl `} onClick={() => {
+        <div className={`${selectedIcon === 'rdv' ? 'bg-white' : 'bg-blue-logo'} p-1 rounded-xl `} onClick={() => {
           openInfos();
           setSelectedIcon(selectedIcon === 'rdv' ? null : 'rdv')
         }}>

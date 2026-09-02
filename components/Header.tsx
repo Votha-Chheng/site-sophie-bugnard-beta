@@ -20,9 +20,9 @@ const Header = () => {
       </div>
       <Separator className="bg-green-logo mt-2.5 mb-1.5 hd:mb-2.5 hidden medium:block" />
       <HeaderInfoLaptop/>
-      <Separator className="bg-green-logo mt-1 hd:mt-2.5 phone:mb-1.5 hd:mb-2.5 block hd:hidden" />
+      <Separator className="bg-green-logo mt-1 hd:mt-2.5 small:mb-1.5 hd:mb-2.5 block hd:hidden" />
       <Menu/>
-      <Separator className="bg-green-logo phone:block hidden" />
+      <Separator className="bg-green-logo small:block hidden" />
     </header>
   )
 }

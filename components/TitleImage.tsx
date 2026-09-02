@@ -1,5 +1,7 @@
 
+import BgTitleIlmage from './BgTitleIlmage';
 import PageTitle from './PageTitle';
+import BgTitleImageMedium from './responsive/BgTitleImageMedium';
 
 type Props = {
   title: string;
@@ -14,16 +16,16 @@ type Props = {
   textSizeTw?: string;
   marginTopTitleTw?: string;
   frameHeightTw?: string;
+  bgPositionMedium?: string;
 }
 
 const TitleImage = (props: Props) => {
-  const {title, imgURL, bgPosition, twWidth, twFrameWidth, topBracketClassName, bottomBracketClassName, topCornerClassName, bottomCornerClassName, textSizeTw, marginTopTitleTw="", frameHeightTw="h-58"} = props
+  const {title, imgURL, bgPosition, twWidth, twFrameWidth, topBracketClassName, bottomBracketClassName, topCornerClassName, bottomCornerClassName, textSizeTw, marginTopTitleTw="", frameHeightTw="h-58", bgPositionMedium} = props
 
   return (
     <section className={`w-full h-64 relative small:block hidden`}>
-      <div className='overflow-hidden w-full h-64 '>
-        <div className='w-full h-full opacity-75 absolute top-0 left-0' style={{backgroundImage: `url(${imgURL})`, backgroundSize: 'cover', backgroundPosition: bgPosition}}/>
-      </div>
+      <BgTitleIlmage imgURL={imgURL} bgPosition={bgPosition || "0px -540px"}/>
+      <BgTitleImageMedium imgURL={imgURL} bgPosition={bgPositionMedium || "0px 0px"}/>
       <PageTitle 
         title={title} 
         twWidth={twWidth} 

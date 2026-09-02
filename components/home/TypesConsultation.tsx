@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { Button } from './ui/button'
+import { Button } from '../ui/button'
 import { PiBuildingOfficeBold } from 'react-icons/pi'
 import { FaHome } from 'react-icons/fa'
 import { Headset } from 'lucide-react'

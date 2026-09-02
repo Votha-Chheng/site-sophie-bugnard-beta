@@ -14,7 +14,7 @@ type Props = {
 
 const PresentationPhone = (props: Props) => {
   return (
-    <div className='phone:hidden block h-full relative p'>
+    <div className='medium:hidden block h-full relative p'>
       <article className='relative py-24'>
         <SoftFrame fill="#3581B8" bg="transparent" width={415} height={205} className="h-105 -translate-x-1/2 left-1/2 top-20 z-0" />
         <div className="w-92 mx-auto pr-2">

@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import SoftFrame from './svg/SoftFrame'
-import { Separator } from './ui/separator'
+import SoftFrame from '../svg/SoftFrame'
+import { Separator } from '../ui/separator'
 import Link from 'next/link'
 
 type PresentationProps = {
