@@ -26,7 +26,7 @@ const IconsInfosList = () => {
           {
             selectedIcon === "phone"
             ?
-            <Link href="tel:0652345678" className=' text-white font-semibold italic'><span className='px-3 bg-blue-logo rounded-lg border-white border'>06 52 34 56 78</span></Link >
+            <Link href="tel:0662710362" className=' text-white font-semibold italic'><span className='px-3 bg-blue-logo rounded-lg border-white border'>06 62 71 03 62</span></Link >
             :
             selectedIcon === "mail"
             ?   
@@ -39,12 +39,12 @@ const IconsInfosList = () => {
               href="https://www.google.com/maps/place/770+Rue+de+la+Roqueturi%C3%A8re,+34090+Montpellier/@43.6319969,3.880447,17z/data=!3m1!4b1!4m6!3m5!1s0x12b6af3efca12501:0x87c0ed47fabddb84!8m2!3d43.631993!4d3.8830219!16s%2Fg%2F11c2chgj2m?entry=ttu&g_ep=EgoyMDI2MDcwOC4wIKXMDSoASAFQAw%3D%3D" 
               className='text-white font-semibold italic'
             >
-              <span className='px-3 bg-blue-logo rounded-lg border-white border'>770 rue de la Roqueturière, 34 090 Montpellier </span>
+              <span className='px-3 mini:text-base text-xs bg-blue-logo rounded-lg border-white border'>770 rue de la Roqueturière, 34090 Montpellier </span>
             </Link >  
             :
             selectedIcon === "clock"
             ?
-            <span className='px-3 bg-white rounded-lg border-blue-logo border text-blue-logo font-semibold italic h-7.5 pt-0.5'>Lundi au vendredi 9h00 - 18h00</span>   
+            <span className='px-3 bg-white rounded-lg border-blue-logo border text-blue-logo font-semibold italic h-7.5 pt-0.5'>Lundi au vendredi sur demande</span>   
             :
             selectedIcon === "parking"
             ?

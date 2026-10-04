@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 import RootBody from "@/components/RootBody";
 import Header from "@/components/Header";
 import IconsInfosList from "@/components/IconsInfosList";
-import MenuResponsive from "@/components/responsive/MenuResponsive";
+import MenuResponsive from "@/components/responsive-components/MenuResponsive";
 
 export const metadata: Metadata = {
   title: "Create Next App",

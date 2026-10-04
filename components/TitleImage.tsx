@@ -1,7 +1,7 @@
 
 import BgTitleIlmage from './BgTitleIlmage';
 import PageTitle from './PageTitle';
-import BgTitleImageMedium from './responsive/BgTitleImageMedium';
+import BgTitleImageMedium from './responsive-components/BgTitleImageMedium';
 
 type Props = {
   title: string;

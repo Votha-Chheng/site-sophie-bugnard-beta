@@ -2,12 +2,13 @@
 
 import BodyLayout from "@/components/layouts/BodyLayout";
 import Presentation from "@/components/home/Presentation";
-import PageTitlePhone from "@/components/responsive/PageTitlePhone";
-import PresentationPhone from "@/components/responsive/PresentationPhone";
+import PageTitlePhone from "@/components/responsive-components/PageTitlePhone";
+import PresentationPhone from "@/components/responsive-components/home/PresentationPhone";
 import SubMainTitle from "@/components/home/SubMainTitle";
 import PommeVie from "@/components/svg/PommeVie";
 import TitleImage from "@/components/TitleImage";
 import TypesConsultation from "@/components/home/TypesConsultation";
+import PresentationMini from "@/components/responsive-components/home/PresentationMini";
 
 export default function Home() {
   return (
@@ -37,6 +38,7 @@ export default function Home() {
         <SubMainTitle className="top-140"/>
       </BodyLayout>
       <PresentationPhone/>
+      <PresentationMini/>
     </div>
   );
 }

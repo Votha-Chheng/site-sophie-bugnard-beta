@@ -1,5 +1,5 @@
 import BodyLayout from '@/components/layouts/BodyLayout'
-import TarifsResponsive from '@/components/responsive/TarifsResponsive';
+import TarifsResponsive from '@/components/responsive-components/TarifsResponsive';
 import Image from 'next/image'
 
 const TarifsPage = () => {

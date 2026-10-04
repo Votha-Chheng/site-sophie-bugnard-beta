@@ -1,15 +1,14 @@
 'use client'
 
 import BodyLayout from "@/components/layouts/BodyLayout"
-import FrameRoundCorner from "@/components/svg/FrameRoundCorner"
-import { Badge } from "@/components/ui/badge"
 import TitleImage from "@/components/TitleImage"
 import Image from "next/image"
-import Link from "next/dist/client/link"
 import TimeLine from "@/components/qui-suis-je/TimeLine";
-import PageTitlePhone from "@/components/responsive/PageTitlePhone";
-import QuiSuisJeResponsive from "@/components/responsive/QuiSuisJeResponsive";
-import ApprocheTablet from "@/components/responsive/ApprocheTablet";
+import PageTitlePhone from "@/components/responsive-components/PageTitlePhone";
+import QuiSuisJeResponsive from "@/components/responsive-components/qui-suis-je/QuiSuisJeResponsive";
+import ApprocheTablet from "@/components/responsive-components/qui-suis-je/ApprocheTablet";
+import { Button } from "@/components/ui/button";
+
 
 const QuiSuisJePage = () => {
   return (
@@ -31,12 +30,12 @@ const QuiSuisJePage = () => {
         title="Formée par la science, guidée par l'écoute"
       />
       <QuiSuisJeResponsive/>
-      <BodyLayout className="pb-275 phone:block hidden">
-        <div className="absolute -translate-x-1/2 left-1/2 top-28">
+      <BodyLayout className="medium:block hidden mt-40 w-340">
+        <div className="">
           <ApprocheTablet/>
-          <section className="hidden mt-16 mb-38 justify-between items-start gap-x-5 hd:flex">
-            <div className="h-fit border-8 relative rounded-4xl border-brown-logo overflow-hidden">
-              <Image src="/jpg/portrait-sophie-bugnard-2.jpeg" width={380} height={400} alt="Sophie Bugnard, docteure en pharmacie, conseillère en nutrition"/>
+          <section className="hidden mb-38 justify-between items-start gap-x-5 hd:flex">
+            <div className="h-fit border-8 relative rounded-4xl border-brown-logo overflow-hidden hd:w-117.5">
+              <Image src="/jpg/portrait-sophie-bugnard-2.jpeg" width={500} height={400} alt="Sophie Bugnard, docteure en pharmacie, conseillère en nutrition"/>
             </div>
             <article className="flex flex-col gap-y-5">
               <div className="relative min-w-1/3">
@@ -62,8 +61,8 @@ const QuiSuisJePage = () => {
 
           <TimeLine/>
 
-          <section className="flex w-full mt-24 mb-10 px-7.5 gap-x-16 items-center">
-            <div className="flex gap-x-1">
+          <section className="w-full mt-24 mb-10 px-7.5 gap-x-16 items-center medium:block hidden">
+            {/* <div className="flex gap-x-1">
               <p className="[writing-mode:vertical-lr] [text-orientation:mixed] rotate-180 font-extrabold font-lato tracking-wide text-3xl text-center">EXP&Eacute;RIENCES</p>
               <div className="flex flex-col items-start gap-y-5 w-115">
                 <Badge 
@@ -88,18 +87,22 @@ const QuiSuisJePage = () => {
                   Conseillère en nutrition libérale (2024 - Aujourd'hui)
                 </Badge>
               </div>
-            </div>
+            </div> */}
 
-            <div className="flex gap-x-1.5 min-w-100">
+            <div className="flex gap-x-1.5 w-210 mx-auto mt-16">
               <p className="[writing-mode:vertical-lr] rotate-180 font-extrabold font-lato tracking-wide text-3xl text-center">FORMATION</p>
               <p className="bg-white px-7.5 font-ysabeau text-xl text-justify outline-2 outline-brown-logo indent-5 tracking-wider rounded-xl pt-7.5">
                 J’ai été formée par le <span className="font-bold">Dr Yann Rougier</span>, spécialiste en nutrition et neuro&shy;sciences appliquées, cofondateur de l’<b>École 5.3</b> et auteur de nombreux ouvrages à succès. Ses enseignements constituent <span className="font-bold">un socle scien&shy;ti&shy;fique et fiable</span>, garantissant des ateliers fondés sur des méthodes sérieuses et éprouvées.
               </p>
             </div>
           </section>
+          <div className='flex justify-center w-full my-14'>
+            <Button className="mr-2 border-2 text-sm small:text-xl pb-2 small:py-5 cursor-pointer font-nunito uppercase -translate-y-4">
+              Demander un RDV
+            </Button>
+          </div>
         </div>
       </BodyLayout>
-
     </div>
   )
 }

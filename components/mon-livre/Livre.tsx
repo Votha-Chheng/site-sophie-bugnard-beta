@@ -16,10 +16,15 @@ const Livre = (props: Props) => {
           </div>
           <p className='border-black border w-fit px-2 py-1 rounded-md text-black tracking-wider text-base not-italic font-lato font-normal self-end'>Ed. Fernand Lanore, 2024</p>
           <div className="flex gap-x-3.5">
-            <Image src="/jpg/livre_couverture.jpg" alt="Couverture du livre" width={300} height={300} className="mt-4" />
-            <p className="mt-5 text-lg text-justify leading-8">
-              Quels sont les secrets de longévité de ces peuples sans cancer et affichant un faible taux de mortalité ? L'homme aurait une durée de vie maximale de cent vingt ans, mais l'espérance de vie n'est pas forcément l'espérance de santé ! Sophie Bugnard, Docteur en pharmacie et naturopathe, nous fait découvrir ici les différents modes de vie, l'alimentation et les fonctionnements intérieurs de ces fameuses "zones bleues", mais surtout, nous apprend comment nous pouvons les transposer dans nos sociétés occidentales stressées et malades. Il est encore possible de changer nos habitudes, de contrecarrer certaines intoxications en agissant maintenant et en étant pleinement acteur de notre santé afin de vieillir en meilleure forme.
-            </p>
+            <Image src="/jpg/livre_couverture.jpg" alt="Couverture du livre" width={350} height={300} className="mt-4" />
+            <div>
+              <p className="mt-5 text-lg text-justify indent-5 leading-8">
+                Quels sont les secrets de longévité de ces peuples sans cancer et affichant un faible taux de mortalité ? L'homme aurait une durée de vie maximale de cent vingt ans, mais l'espérance de vie n'est pas forcément l'espérance de santé ! Sophie Bugnard, Docteur en pharmacie et naturopathe, nous fait découvrir ici les différents modes de vie, l'alimentation et les fonctionnements intérieurs de ces fameuses "zones bleues", mais surtout, nous apprend comment nous pouvons les transposer dans nos sociétés occidentales stressées et malades. Il est encore possible de changer nos habitudes, de contrecarrer certaines intoxications en agissant maintenant et en étant pleinement acteur de notre santé afin de vieillir en meilleure forme.
+              </p>
+              <p className="text-lg text-justify indent-5 leading-8">
+                La publication de cet ouvrage a été encouragée par le Dr Jean-Pierre Willem, médecin et auteur de nombreux ouvrages consacrés notamment aux médecines naturelles, à l’ethnomédecine et à la santé holistique.
+              </p>
+            </div>
           </div>
         </div>
         <div className="min-w-2/5 flex justify-center mt-10">
@@ -70,9 +75,14 @@ const Livre = (props: Props) => {
           <p className='border-black border w-fit px-2 py-1 rounded-md text-black tracking-wider text-base not-italic font-lato font-normal self-end'>Ed. Fernand Lanore, 2024</p>
           <div className="flex gap-x-3.5">
             <Image src="/jpg/livre_couverture.jpg" alt="Couverture du livre" width={250} height={250} className="mt-4" />
-            <p className="mt-5 text-sm medium:text-base text-justify medium:leading-7 leading-6">
-              Quels sont les secrets de longévité de ces peuples sans cancer et affichant un faible taux de mortalité ? L'homme aurait une durée de vie maximale de cent vingt ans, mais l'espérance de vie n'est pas forcément l'espérance de santé ! Sophie Bugnard, Docteur en pharmacie et naturopathe, nous fait découvrir ici les différents modes de vie, l'alimentation et les fonctionnements intérieurs de ces fameuses "zones bleues", mais surtout, nous apprend comment nous pouvons les transposer dans nos sociétés occidentales stressées et malades. Il est encore possible de changer nos habitudes, de contrecarrer certaines intoxications en agissant maintenant et en étant pleinement acteur de notre santé afin de vieillir en meilleure forme.
-            </p>
+            <div>
+              <p className="mt-5 text-sm medium:text-base text-justify medium:leading-7 leading-6 indent-4">
+                Quels sont les secrets de longévité de ces peuples sans cancer et affichant un faible taux de mortalité ? L'homme aurait une durée de vie maximale de cent vingt ans, mais l'espérance de vie n'est pas forcément l'espérance de santé ! Sophie Bugnard, Docteur en pharmacie et naturopathe, nous fait découvrir ici les différents modes de vie, l'alimentation et les fonctionnements intérieurs de ces fameuses "zones bleues", mais surtout, nous apprend comment nous pouvons les transposer dans nos sociétés occidentales stressées et malades. Il est encore possible de changer nos habitudes, de contrecarrer certaines intoxications en agissant maintenant et en étant pleinement acteur de notre santé afin de vieillir en meilleure forme.
+              </p>
+              <p className="text-sm medium:text-base text-justify medium:leading-7 leading-6 indent-4">
+                La publication de cet ouvrage a été encouragée par le Dr Jean-Pierre Willem, médecin et auteur de nombreux ouvrages consacrés notamment aux médecines naturelles, à l’ethnomédecine et à la santé holistique.
+              </p>
+            </div>
           </div>
         </div>
         <div className="flex justify-center mt-10 min-w-1/4">
@@ -125,9 +135,14 @@ const Livre = (props: Props) => {
 
           <div className="">
             <Image src="/jpg/livre_couverture.jpg" alt="Couverture du livre" width={175} height={175} className="float-left mr-4" />
-            <p className="mt-5 text-sm medium:text-base text-justify medium:leading-7 leading-6">
-              Quels sont les secrets de longévité de ces peuples sans cancer et affichant un faible taux de mortalité ? L'homme aurait une durée de vie maximale de cent vingt ans, mais l'espérance de vie n'est pas forcément l'espérance de santé ! Sophie Bugnard, Docteur en pharmacie et naturopathe, nous fait découvrir ici les différents modes de vie, l'alimentation et les fonctionnements intérieurs de ces fameuses "zones bleues", mais surtout, nous apprend comment nous pouvons les transposer dans nos sociétés occidentales stressées et malades. Il est encore possible de changer nos habitudes, de contrecarrer certaines intoxications en agissant maintenant et en étant pleinement acteur de notre santé afin de vieillir en meilleure forme.
-            </p>
+            <div>
+              <p className="mt-5 text-sm medium:text-base text-justify medium:leading-7 leading-6">
+                Quels sont les secrets de lon&shy;gé&shy;vi&shy;té de ces peu&shy;ples sans can&shy;cer et af&shy;fi&shy;chant un fai&shy;ble taux de mor&shy;ta&shy;li&shy;té ? L'homme au&shy;rait une du&shy;rée de vie maxi&shy;ma&shy;le de cent vingt ans, mais l'espé&shy;ran&shy;ce de vie n'est pas for&shy;cé&shy;ment l'espé&shy;ran&shy;ce de san&shy;té ! Sophie Bugnard, Docteur en pharmacie et natu&shy;ro&shy;pa&shy;the, nous fait dé&shy;cou&shy;vrir ici les dif&shy;fé&shy;rents mo&shy;des de vie, l'ali&shy;men&shy;ta&shy;tion et les fonction&shy;ne&shy;ments inté&shy;rieurs de ces fa&shy;meu&shy;ses "zones bleues", mais surtout, nous ap&shy;prend com&shy;ment nous pou&shy;vons les transpo&shy;ser dans nos so&shy;ciétés oc&shy;ciden&shy;ta&shy;les stres&shy;sées et ma&shy;la&shy;des. Il est en&shy;co&shy;re pos&shy;si&shy;ble de chan&shy;ger nos ha&shy;bi&shy;tu&shy;des, de contre&shy;carrer certaines intoxications en agissant maintenant et en étant pleinement acteur de notre santé afin de vieillir en meilleure forme.
+              </p>
+              <p className="text-sm medium:text-base text-justify medium:leading-7 leading-6">
+                La publication de cet ouvrage a été encou&shy;ra&shy;gée par le Dr Jean-Pierre Willem, mé&shy;de&shy;cin et auteur de nom&shy;breux ouvrages con&shy;sa&shy;crés notam&shy;ment aux méde&shy;cines na&shy;tu&shy;rel&shy;les, à l’ethno&shy;mé&shy;de&shy;cine et à la san&shy;té ho&shy;listi&shy;que.
+              </p>
+            </div>
           </div>
         </div>
         <div className="mt-7.5">

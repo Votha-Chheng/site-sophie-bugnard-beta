@@ -2,13 +2,12 @@ import { GraduationCap } from 'lucide-react';
 import { FiBook } from 'react-icons/fi';
 import { GiDiploma } from 'react-icons/gi';
 import Link from 'next/link';
-import {Badge} from '../ui/badge';
 
 type Props = {}
 
 const TimeLineResponsive = (props: Props) => {
   return (
-    <section className="ml-7.5 mr-2.5 relative mb-12">
+    <section className="mini:ml-7.5 ml-1.5 mr-2.5 relative mb-12 phone:w-1/2 phone:mx-auto">
       <div className="w-5 h-96 bg-green-logo rounded-xl mb-20"/>
       <div className="absolute w-10 h-10 bg-white border-2 border-green-logo rounded-full top-0 -left-2.5 flex items-center justify-center">
         <GraduationCap size={30} color="#000000"/>

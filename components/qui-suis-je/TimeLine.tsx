@@ -14,7 +14,7 @@ const TimeLine = (props: Props) => {
   
   return (
     <section>
-      <div className="relative w-360 h-10">
+      <div className="relative w-360 h-10 mx-auto medium:block hidden">
         {/* <div
           className={` ${hoveredExp ? "opacity-100" : "opacity-0"} absolute cursor-pointer hover:scale-110 transition-transform duration-200 z-20 left-103 -top-5 h-10 w-10 rounded-full bg-green-logo mt-2.5 translate-x-1/2`}
         >

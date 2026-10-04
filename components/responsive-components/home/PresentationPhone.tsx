@@ -1,12 +1,12 @@
 import Image from 'next/image'
-import SoftFrame from '../svg/SoftFrame';
-import { Separator } from '../ui/separator';
+import SoftFrame from '../../svg/SoftFrame';
+import { Separator } from '../../ui/separator';
 import Link from 'next/link'
 import { ImQuotesLeft, ImQuotesRight } from 'react-icons/im';
 import { PiBuildingOfficeBold } from 'react-icons/pi';
 import { FaHome } from 'react-icons/fa';
 import { Headset } from 'lucide-react';
-import { Button } from '../ui/button';
+import { Button } from '../../ui/button';
 
 type Props = {
 
@@ -14,12 +14,12 @@ type Props = {
 
 const PresentationPhone = (props: Props) => {
   return (
-    <div className='medium:hidden block h-full relative p'>
+    <div className='medium:hidden hidden mini:block h-full relative p'>
       <article className='relative py-24'>
-        <SoftFrame fill="#3581B8" bg="transparent" width={415} height={205} className="h-105 -translate-x-1/2 left-1/2 top-20 z-0" />
+        <SoftFrame fill="#3581B8" bg="transparent" width={400} height={205} className="h-105 -translate-x-1/2 left-1/2 top-20 z-0" />
         <div className="w-92 mx-auto pr-2">
           <div className="flex hd:justify-normal justify-between items-end mb-2">
-            <p className="font-lato tracking-wide text-xl font-extrabold pl-1.5">
+            <p className="font-lato tracking-wide text-2xl font-extrabold pl-1.5">
               Sophie Bugnard
             </p>
             <Image 
@@ -31,7 +31,7 @@ const PresentationPhone = (props: Props) => {
             />
           </div>
           <Separator className="bg-black my-2" />
-          <ul className={`font-ysabeau font-bold tracking-wide mb-7.5 ml-1 mr-2 text-black leading-8 text-lg z-30`} >
+          <ul className={`font-ysabeau tracking-wide mb-7.5 ml-1 mr-2 text-black leading-8 text-lg z-30`} >
             <li>▸<span className="">&nbsp;Docteure en pharmacie</span></li>
             <li>▸<span className="">&nbsp;Conseillère en nutrition à Montpellier</span></li>
             <li>▸<span className="">&nbsp;Spécialiste du rééquilibrage alimen&shy;taire des femmes en période de ménopause</span></li>

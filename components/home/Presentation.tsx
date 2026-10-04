@@ -38,7 +38,7 @@ const Presentation = (props: PresentationProps) => {
                 />
               </div>
               <Separator className="bg-black my-2" />
-              <ul className={`font-ysabeau font-bold tracking-wide mb-7.5 ml-1 mr-2 text-black leading-8 hd:text-xl text-lg w-96`} >
+              <ul className={`font-ysabeau tracking-wide mb-7.5 ml-1 mr-2 text-black leading-8 hd:text-xl text-lg w-96`} >
                 <li>▸<span className="">&nbsp;Docteure en pharmacie</span></li>
                 <li>▸<span className="">&nbsp;Conseillère en nutrition à Montpellier</span></li>
                 <li>▸<span className="">&nbsp;Spécialiste du rééquilibrage alimen&shy;taire des femmes en période de ménopause</span></li>

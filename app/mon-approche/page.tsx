@@ -1,9 +1,10 @@
 'use client'
 
 import BodyLayout from "@/components/layouts/BodyLayout"
-import MonApprocheResponsive from "@/components/responsive/MonApprocheResponsive";
-import PageTitlePhone from "@/components/responsive/PageTitlePhone";
+import MonApprocheResponsive from "@/components/responsive-components/mon-approche/MonApprocheResponsive";
+import PageTitlePhone from "@/components/responsive-components/PageTitlePhone";
 import TitleImage from "@/components/TitleImage"
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
 const MonApprochePage = () => {
@@ -14,8 +15,8 @@ const MonApprochePage = () => {
         title="Mieux manger, mieux vivre."
         imgURL="/jpg/accueil-titre.jpg" 
         bgPosition="0px -350px" 
-        twWidth="w-212" 
-        twFrameWidth="w-215" 
+        twWidth="w-193" 
+        twFrameWidth="w-195" 
         topBracketClassName="-left-4 -top-2.5" 
         bottomBracketClassName="-right-3 -bottom-2.5"
         topCornerClassName="-top-1.5 right-1.5"
@@ -29,7 +30,7 @@ const MonApprochePage = () => {
         title="Mieux manger, mieux vivre."
       />
       <MonApprocheResponsive/>
-      <BodyLayout className="min-h-screenb small:block hidden">
+      <BodyLayout className="min-h-screenb hd:block hidden">
         {/* <section className="mt-28 w-360 mx-auto">
           <h2 className="font-bold text-xl flex items-center gap-x-2"><CiWarning/>Accentuer la spécialisation sur la ménopause</h2>
           <p className="my-5">
@@ -54,7 +55,7 @@ const MonApprochePage = () => {
         Je vous propose un accompagnement nutritionnel sur mesure pour vous aider à retrouver énergie, équilibre hormonal et bien-être au quotidien. Grâce à une approche personnalisée, bienveillante et fondée sur les dernières connaissances en nutrition, vous pourrez reprendre confiance en votre corps et aborder cette nouvelle étape de votre vie avec sérénité et élégance.
 
         Offrez-vous l'accompagnement que vous méritez. */}
-        <section className="w-360 mx-auto mt-28 flex justify-center mb-10">
+        <section className="w-360 mx-auto mt-28 flex justify-center mb-10 ">
           <div className="relative ml-12 mt-5">
             <div className="w-full h-full bg-linear-to-r from-transparent via-white/5 to-white absolute" />
             <Image 
@@ -74,15 +75,18 @@ const MonApprochePage = () => {
               </li>
               {/* <li className="list-disc">Vous désirez perdre du poids et vous ne savez pas par où commencer ?</li>  */}
               <li className="list-disc">
-                <span className="font-bold italic">&Agrave; l'aide d'un accompagnement nutritionnel sur mesure, bienveillant et fondé sur les dernières connaissances en nutrition</span>, retrouver son énergie, son équilibre hormonal et son bien-être au quotidien redeviennent possibles. <span className="font-bold italic">Reprenez confiance en votre corps pour aborder cette nouvelle étape de votre vie avec sérénité et élégance.</span>
+                <span className="font-bold italic">&Agrave; l'aide d'un accompagnement nutritionnel sur mesure, bienveillant et fondé sur les dernières connaissances en nutrition</span>, retrouver son énergie, son équilibre hormonal et son bien-être au quotidien redeviennent possibles. <span className="font-bold italic"></span>
                 {/* Je vous propose un accompagnement nutritionnel sur mesure pour vous aider à retrouver énergie, équilibre hormonal et bien-être au quotidien. Grâce à une approche personnalisée, bienveillante et fondée sur les dernières connaissances en nutrition, vous pourrez reprendre confiance en votre corps et aborder cette nouvelle étape de votre vie avec sérénité et élégance. */}
               </li>
               {/* <li className="list-disc">Vous désirez perdre du poids et vous ne savez pas par où commencer ?</li>
               <li className="list-disc"> Vous avez déjà essayé de multiples régimes, du plus restrictif  jusqu'aux « ali&shy;ments à consommer à volonté », mais toujours sans résultats ?</li> */}
             </ul>
+            <p className="text-center font-ysabeau tracking-wide text-white text-4xl my-8 font-bold italic">
+              Reprenez confiance en votre corps pour aborder cette nouvelle étape de votre vie avec sérénité et élégance.
+            </p>
             
             <p className="my-5 mx-5 px-5 py-2.5 tracking-wide text-xl text-black bg-white text-justify rounded-xl indent-5 font-lato leading-8">
-              <span className="font-bold italic">Spécialisée en nutrition hormonale et métabolisme féminin</span>, mon rôle à vos côtés sera de vous aider à <span className="font-bold italic">mieux comprendre les changements métaboliques qui affectent votre corps</span>, puis à retrouver un équilibre métabolique durable. Ensemble, nous mettrons en place des solutions adaptées à votre mode de vie pour soulager les symptômes hormonaux et retrouver votre vitalité. <span className="font-bold italic">Parce que chaque femme est unique, votre accompagnement l'est aussi.</span>
+              <span className="font-bold italic">Spécialisée en nutrition et santé métabolique féminine,</span> mon rôle à vos côtés sera de vous aider à <span className="font-bold italic">mieux comprendre les changements métaboliques qui affectent votre corps, puis à retrouver un équilibre métabolique durable</span>. Ensemble, nous mettrons en place des solutions adaptées à votre mode de vie pour soulager les symptômes hormonaux et retrouver votre vitalité. <span className="font-bold italic">Parce que chaque femme est unique, votre accompagnement l'est aussi.</span>
               
               {/* <span className="">Il devient impératif de stopper l’effet yo-yo, à terme vous mettez en danger votre santé !</span> En tant que conseillère en nutrition spécialisée dans les <span className="font-extrabold italic">5 facteurs du vivant (concept issu des neurosciences appliquées)</span>, je vous propose de retrouver le plaisir de manger sainement en étant libéré(e) de toute culpabilité et retrouver votre poids santé. */}
             </p>
@@ -94,7 +98,7 @@ const MonApprochePage = () => {
 
         <section className="mb-12 w-340 mx-auto px-16 mt-0">
           <h2 className="ml-auto font-poiret-one tracking-wide font-bold text-[38px] bg-green-logo text-white w-200 text-right border-x-8 border-t-8 border-green-logo px-5 rounded-t-xl leading-12">
-            Choisir de ne plus subir, mais comprendre et agir à la place <span className="font-lato font-normal">!</span>
+            Choisir de ne plus subir, mais comprendre et agir <span className="font-lato font-normal">!</span>
           </h2>
           <div className="bg-green-logo rounded-tl-xl rounded-b-xl px-7.5 py-5 flex-col items-start">
             <div className="flex gap-x-5">
@@ -141,6 +145,11 @@ const MonApprochePage = () => {
             </div>
           </div>
         </section>
+        <div className='flex justify-center w-full my-14'>
+          <Button className="mr-2 border-2 text-sm small:text-xl pb-2 small:py-5 cursor-pointer font-nunito uppercase -translate-y-4">
+            Demander un RDV
+          </Button>
+        </div>
       </BodyLayout>
     </div>
   )
