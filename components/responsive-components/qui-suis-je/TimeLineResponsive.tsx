@@ -26,7 +26,7 @@ const TimeLineResponsive = (props: Props) => {
         <p className="">Université Descartes, Paris V - <span className="font-bold font-lato text-xs">2002</span></p>
       </div>
       <div className={`absolute text-sm duration-200 border-black border-2 px-1.5 pb-1.5 w-72 bg-white rounded-md text-center font-ysabeau left-10 top-26`}>
-        <p className="font-bold flex gap-x-1.5 justify-center"><span className="">Certification en naturopathie</span></p>
+        <p className="font-bold flex gap-x-1.5 justify-center"><span className="">Certification en nutrition et diététique</span></p>
         <p className="">Faculté Libre de Médecines Naturelles et d’Ethnomédecine, Paris 14 - <span className="font-bold font-lato text-xs">2022</span></p>
       </div>
       <div className={`absolute text-sm duration-200 border-black border-2 px-1.5 pb-1.5 w-72 bg-white rounded-md text-center font-ysabeau left-10 top-56`}>
