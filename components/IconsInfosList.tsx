@@ -49,7 +49,8 @@ const IconsInfosList = () => {
             selectedIcon === "parking"
             ?
             <span className='px-3 bg-white rounded-lg border-blue-logo border text-blue-logo font-semibold italic h-7.5 pt-0.5'>Parking gratuit sur place</span>
-            :""
+            :
+            <span className='px-3 bg-white rounded-lg border-blue-logo border text-blue-logo font-semibold italic h-7.5 pt-0.5'>Demander un RDV</span>
           }
         </div>
         <div className={`${selectedIcon ?"block" : "hidden"} h-screen w-full bg-transparent`} onClick={() => setSelectedIcon(null)}/>
@@ -96,10 +97,11 @@ const IconsInfosList = () => {
           <SquareParking color={selectedIcon === 'parking' ? '#9D695A' : '#ffffff'} className='cursor-pointer'/>
         </div>
 
-        <div className={`${selectedIcon === 'rdv' ? 'bg-white' : 'bg-blue-logo'} p-1 rounded-xl `} onClick={() => {
+        <div className={`${selectedIcon === 'rdv' ? 'bg-white' : 'bg-blue-logo'} p-1 rounded-xl relative`} onClick={() => {
           openInfos();
           setSelectedIcon(selectedIcon === 'rdv' ? null : 'rdv')
         }}>
+          <p className={`${selectedIcon === 'rdv' ? 'hidden' : 'block'} leading-1 italic text-white text-[8px] font-bold absolute top-0.5 left-1.25`} >R D V</p>
           <RDVIcon stroke={selectedIcon === 'rdv' ? '#9D695A' : '#ffffff'} width={25} height={25} className='cursor-pointer'/>
         </div>
 

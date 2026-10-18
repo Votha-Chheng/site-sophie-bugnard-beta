@@ -62,19 +62,19 @@ const PresentationMini = (props: Props) => {
           </div>
           <div className='text-base font-semibold absolute top-4 w-78 pl-3 font-ysabeau -rotate-2 mx-auto'>
             <p className='mb-1.5 bg-brown-logo w-fit px-2 py-1 rounded-md italic text-white tracking-wider'>Consultation au choix :</p>
-            <ul className='pl-2 space-y-2 text-sm'>
+            <ul className='pl-2 space-y-2 text-sm max-w-74'>
               <li className="font-normal bg-white w-fit px-2.5 flex items-center gap-x-1.5 rounded-md border font-nunito">
                 <PiBuildingOfficeBold color='#9D695A' size={16} />À mon cabinet à Montpellier
               </li>
-              <li className="font-normal bg-white w-fit px-2.5 flex items-center gap-x-1.5 rounded-md border font-nunito">
-                <FaHome color='#9D695A' size={16} />À domicile à Montpellier et sa périphérie
+              <li className="font-normal bg-white w-fit px-2.5 flex items-start gap-x-1.5 rounded-md border font-nunito">
+                <FaHome color='#9D695A' size={16} />À domicile à Montpellier et alentours
               </li>
               <li className="font-normal bg-white w-fit px-2.5 flex items-center gap-x-1.5 rounded-md border font-nunito">
                 <Headset color='#9D695A' size={16} />En visio
               </li>
             </ul>
             <div className='flex justify-end w-full rotate-2'>
-              <p className='w-52 rounded-sm border-2 mt-1.5 text-sm py-1 px-1.5 italic text-center border-green-logo bg-white'>
+              <p className='w-52 rounded-sm border-2 mt-1.5 text-sm py-1 px-1.5 italic text-center border-green-logo bg-white -mr-2.5'>
                 Suivi au quotidien (SMS, e-mail, Whatsapp...)
               </p>
             </div>

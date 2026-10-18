@@ -47,10 +47,11 @@ const QuiSuisJeResponsive = (props: Props) => {
           </Badge>
         </div>
       </section> */}
-      <section className="flex gap-x-1.5 mr-2.5 mb-7.5 small:w-200 small:mx-auto">
+      <section className="flex gap-x-1.5 mr-2.5 mb-7.5 small:w-200 small:mx-auto ">
         <p className="[writing-mode:vertical-lr] rotate-180 font-extrabold font-lato tracking-wide text-3xl text-center">FORMATION</p>
-        <p className="bg-white px-2.5 font-ysabeau text-base phone:text-lg text-justify outline-2 outline-brown-logo indent-5 tracking-wider rounded-xl py-2 small:p-5 small:leading-8">
-          J’ai été formée par le <span className="font-bold">Dr Yann Rougier</span>, spécialiste en nutrition et neuro&shy;sciences appliquées, cofondateur de l’<b>École 5.3</b> et auteur de nombreux ouvrages à succès. Ses enseignements constituent <span className="font-bold">un socle scien&shy;ti&shy;fique et fiable</span>, garantissant des ateliers fondés sur des méthodes sérieuses et éprouvées.
+        <p className="bg-white px-5 py-5 mini:text-lg mini:p-6 phone:text-xl phone:leading-8 small:p-8 small:leading-9 font-ysabeau text-base text-justify outline-2 outline-brown-logo indent-5 tracking-wider rounded-xl">
+          J’ai été formée par le <span className="font-bold">Dr Yann Rougier</span>, spé&shy;cia&shy;liste en nu&shy;tri&shy;tion et neu&shy;ro&shy;sciences ap&shy;pli&shy;quées, co&shy;fon&shy;da&shy;teur de l’<b>École 5.3</b> et au&shy;teur de nom&shy;breux ou&shy;vra&shy;ges à suc&shy;cès. 
+          {/* Ses enseignements constituent <span className="font-bold">un socle scien&shy;ti&shy;fique et fiable</span>, garantissant des ateliers fondés sur des méthodes sérieuses et éprouvées. */}
         </p>
       </section>
     </main>

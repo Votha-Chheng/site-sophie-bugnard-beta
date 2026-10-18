@@ -91,8 +91,9 @@ const QuiSuisJePage = () => {
 
             <div className="flex gap-x-1.5 w-210 mx-auto mt-16">
               <p className="[writing-mode:vertical-lr] rotate-180 font-extrabold font-lato tracking-wide text-3xl text-center">FORMATION</p>
-              <p className="bg-white px-7.5 font-ysabeau text-xl text-justify outline-2 outline-brown-logo indent-5 tracking-wider rounded-xl pt-7.5">
-                J’ai été formée par le <span className="font-bold">Dr Yann Rougier</span>, spécialiste en nutrition et neuro&shy;sciences appliquées, cofondateur de l’<b>École 5.3</b> et auteur de nombreux ouvrages à succès. Ses enseignements constituent <span className="font-bold">un socle scien&shy;ti&shy;fique et fiable</span>, garantissant des ateliers fondés sur des méthodes sérieuses et éprouvées.
+              <p className="bg-white px-7.5 font-ysabeau text-2xl text-justify outline-2 outline-brown-logo indent-5 tracking-wider rounded-xl pt-7.5">
+                J’ai été formée par le <span className="font-bold">Dr Yann Rougier</span>, spécialiste en nutrition et neuro&shy;sciences appliquées, cofondateur de l’<b>École 5.3</b> et auteur de nombreux ouvrages à succès.
+                {/* Ses enseignements constituent <span className="font-bold">un socle scien&shy;ti&shy;fique et fiable</span>, garantissant des ateliers fondés sur des méthodes sérieuses et éprouvées. */}
               </p>
             </div>
           </section>

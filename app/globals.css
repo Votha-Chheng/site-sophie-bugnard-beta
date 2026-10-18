@@ -10,7 +10,7 @@
   --breakpoint-medium: 1290px;
   --breakpoint-small: 875px;
   --breakpoint-phone: 596px;
-  --breakpoint-mini: 380px;
+  --breakpoint-mini: 450px;
 }
 
 @theme inline {

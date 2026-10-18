@@ -21,7 +21,7 @@ const Article = (props: Props) => {
         </div>
         <div className='mt-16 min-w-1/5'>
           <h2 className="text-2xl font-lato font-semibold mb-3.5">
-            Retrouvez cette article en ligne sur le site de <i>Top Santé</i> :
+            Retrouvez cet article en ligne sur le site de <i>Top Santé</i> :
           </h2>
           <div className='flex items-center'>
             <IoIosArrowDroprightCircle size={24} className="text-green-logo mt-1" />
@@ -50,7 +50,7 @@ const Article = (props: Props) => {
         </div>
         <div className='mt-16 min-w-1/5'>
           <h2 className="text-xl font-lato font-semibold mb-3.5 text-center">
-            Retrouvez cette article en ligne sur le site de <i>Top Santé</i> :
+            Retrouvez cet article en ligne sur le site de <i>Top Santé</i> :
           </h2>
           <div className='flex items-center justify-center'>
             <IoIosArrowDroprightCircle size={24} className="text-green-logo mt-1" />
