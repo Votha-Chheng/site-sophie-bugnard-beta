@@ -24,7 +24,7 @@ const HeaderInfo = () => {
       </div>
       <div className='flex gap-x-2 ma-w-fit'>
         <RDVIcon stroke='#9D695A' width={30} height={30}/>
-        <Link href="/rdv" className='px-2 py-1 rounded-lg bg-blue-logo text-white font-semibold italic w-fit whitespace-nowrap'>
+        <Link href="/contact" className='px-2 py-1 rounded-lg bg-blue-logo text-white font-semibold italic w-fit whitespace-nowrap'>
           Demander un RDV
         </Link>
       </div>
