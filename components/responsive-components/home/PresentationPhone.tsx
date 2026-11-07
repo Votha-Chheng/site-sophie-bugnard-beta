@@ -16,18 +16,18 @@ const PresentationPhone = (props: Props) => {
   return (
     <div className='medium:hidden hidden mini:block h-full relative p'>
       <article className='relative py-24'>
-        <SoftFrame fill="#3581B8" bg="transparent" width={400} height={205} className="h-105 -translate-x-1/2 left-1/2 top-20 z-0" />
+        <SoftFrame fill="#3581B8" bg="transparent" width={410} height={235} className="h-120 -translate-x-1/2 left-1/2 top-20 z-0" />
         <div className="w-92 mx-auto pr-2">
           <div className="flex hd:justify-normal justify-between items-end mb-2">
             <p className="font-lato tracking-wide text-2xl font-extrabold pl-1.5">
               Sophie Bugnard
             </p>
             <Image 
-              src={`/jpg/portrait-sophie-bugnard-square.jpeg`} 
+              src={`/jpg/portrait-sophie-bugnard-large-square.jpeg`} 
               alt="Portrait Sophie Bugnard docteure en pharmacie" 
-              width={105} 
-              height={100} 
-              className="rounded-full border-8 border-blue-logo hd:hidden block -mr-4" 
+              width={150} 
+              height={150} 
+              className="rounded-full border-8 border-blue-logo hd:hidden block -mr-5" 
             />
           </div>
           <Separator className="bg-black my-2" />

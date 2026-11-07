@@ -101,8 +101,8 @@ const IconsInfosList = () => {
           openInfos();
           setSelectedIcon(selectedIcon === 'rdv' ? null : 'rdv')
         }}>
-          <p className={`${selectedIcon === 'rdv' ? 'hidden' : 'block'} leading-1 italic text-white text-[8px] font-bold absolute top-0.5 left-1.25`} >R D V</p>
-          <RDVIcon stroke={selectedIcon === 'rdv' ? '#9D695A' : '#ffffff'} width={25} height={25} className='cursor-pointer'/>
+          <p className={`${selectedIcon === 'rdv' ? 'text-brown-logo' : 'text-white'} text-base font-bold tracking-wide cursor-pointer`} >RDV</p>
+          
         </div>
 
         

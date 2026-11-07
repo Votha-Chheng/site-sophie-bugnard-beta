@@ -7,18 +7,14 @@ const ApprocheTablet = (props: Props) => {
   return (
     <div className='medium:block hidden hd:hidden relative w-300 mx-auto'>
       <section className="flex mt-16 mb-38 justify-between items-start gap-x-5">
-        <div className="h-fit border-8 relative rounded-4xl border-brown-logo overflow-hidden">
-          <Image src="/jpg/portrait-sophie-bugnard-2.jpeg" width={488} height={400} alt="Sophie Bugnard, docteure en pharmacie, conseillère en nutrition"/>
+        <div className="h-fit w-136 border-4 relative rounded-4xl border-brown-logo overflow-hidden">
+          <Image src="/jpg/portrait-sophie-bugnard-large.jpeg" width={488} height={400} alt="Sophie Bugnard, docteure en pharmacie, conseillère en nutrition"/>
         </div>
         <article className="flex flex-col gap-y-5 min-w-3/5">
           <div className="relative">
-            {/* <FrameRoundCorner width={600} height={435} className="absolute -top-28 -z-10"/> */}
             <p className="bg-white font-ysabeau text-xl text-justify indent-3 leading-7 border-2 border-green-logo rounded-2xl px-5 py-3">
               Conseillère en nutrition à Montpellier, <span className="font-bold">spécialisée dans le ré&shy;équilibrage ali&shy;men&shy;tai&shy;re des femmes en période de ménopause ou pré&shy;ménopause</span>, j’ac&shy;com&shy;pa&shy;gne cel&shy;les qui sou&shy;hai&shy;tent per&shy;dre du poids ou évi&shy;ter d’en pren&shy;dre grâ&shy;ce à une ali&shy;men&shy;ta&shy;tion saine, adap&shy;tée et person&shy;nali&shy;sée. 
             </p>
-            {/* <p className="bg-white font-ysabeau text-xl text-justify w-160 mt-1.5 ml-18">
-              <span className="font-bold">Forte d'une solide formation en pharmacologie</span>, mon expertise en compléments alimentaires me permet également de proposer des solutions naturelles et sécurisées pour répondre à vos besoins spécifiques.
-            </p> */}
           </div>
 
           <ul className="border-2 border-blue-logo rounded-2xl bg-white font-ysabeau text-xl text-justify px-5 py-3">

@@ -3,16 +3,15 @@ import Link from 'next/link';
 import { ImBook } from 'react-icons/im';
 import { IoIosArrowDroprightCircle } from 'react-icons/io';
 
-type Props = {}
 
-const Livre = (props: Props) => {
+const Livre = () => {
   return (
     <>
       <section className={`mt-36 border-2 border-green-logo rounded-xl bg-white py-7.5 px-5 gap-x-10 hd:flex hidden`}>
         <div className='font-semibold min-w-3/5 pl-3.5 font-ysabeau -rotate-1'>
           <div className="flex items-center gap-x-2 mb-2">
             <ImBook className="text-green-logo" size={34} />
-            <p className='bg-blue-logo w-fit px-2 py-1 rounded-md italic text-white tracking-wider text-xl'>Les secrets de la longévité en bonne santé - Une étude sur les zones bleues</p>
+            <p className='bg-black w-fit px-2 py-1 rounded-md italic text-white tracking-wider text-xl'>Les secrets de la longévité en bonne santé - Une étude sur les zones bleues</p>
           </div>
           <p className='border-black border w-fit px-2 py-1 rounded-md text-black tracking-wider text-base not-italic font-lato font-normal self-end'>Ed. Fernand Lanore, 2024</p>
           <div className="flex gap-x-3.5">

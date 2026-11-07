@@ -15,7 +15,7 @@ const Presentation = (props: PresentationProps) => {
       <div className={`relative w-100 h-125 ${className}`}>
         <div className='absolute top-10 left-0 h-50 w-50 rounded-full bg-blue-logo hd:block hidden'/>
         <Image 
-          src={`/jpg/portrait-sophie-bugnard-square.jpeg`} 
+          src={`/jpg/portrait-sophie-bugnard-large-square.jpeg`} 
           alt="Portrait Sophie Bugnard docteure en pharmacie" 
           width={196} 
           height={196} 
@@ -23,18 +23,18 @@ const Presentation = (props: PresentationProps) => {
         />
         <div className='absolute top-58 left-0'>
           <article className='relative'>
-            <SoftFrame fill="#3581B8" bg="#f2f0ef" width={450} className="absolute top-0 left-0 z-40 hd:h-100 h-105" />
+            <SoftFrame fill="#3581B8" bg="#f2f0ef" width={450} className="absolute top-0 left-0 z-40 hd:h-100 h-120" />
             <div className="z-40 absolute w-96 left-8 hd:top-9 top-2.5">
               <div className="flex hd:justify-normal justify-between items-end mb-2 w-96">
                 <p className="font-lato tracking-wide text-2xl font-extrabold pl-1.5">
                   Sophie Bugnard
                 </p>
                 <Image 
-                  src={`/jpg/portrait-sophie-bugnard-square.jpeg`} 
+                  src={`/jpg/portrait-sophie-bugnard-large-square.jpeg`} 
                   alt="Portrait Sophie Bugnard docteure en pharmacie" 
-                  width={100} 
-                  height={100} 
-                  className="rounded-full border-8 border-blue-logo hd:hidden block -mr-4" 
+                  width={150} 
+                  height={150} 
+                  className="rounded-full border-8 border-blue-logo hd:hidden block -mr-7" 
                 />
               </div>
               <Separator className="bg-black my-2" />

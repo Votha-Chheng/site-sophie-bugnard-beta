@@ -21,7 +21,7 @@ const PresentationMini = (props: Props) => {
               Sophie Bugnard
             </p>
             <Image 
-              src={`/jpg/portrait-sophie-bugnard-square.jpeg`} 
+              src={`/jpg/portrait-sophie-bugnard-large-square.jpeg`} 
               alt="Portrait Sophie Bugnard docteure en pharmacie" 
               width={100} 
               height={100} 

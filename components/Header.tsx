@@ -6,7 +6,7 @@ import { Separator } from './ui/separator'
 import Menu from './Menu'
 import { useColorPickerStore } from '@/stores/colorPickerStore'
 import HeaderInfoLaptop from './HeaderInfoLaptop';
-import LogoSmallDevice from './LogoSmallDevice';
+import LogoSmallDevice from './responsive-components/LogoSmallDevice';
 
 const Header = () => {
   const {bgColor} = useColorPickerStore()

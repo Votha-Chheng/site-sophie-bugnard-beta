@@ -34,10 +34,10 @@ const QuiSuisJePage = () => {
         <div className="">
           <ApprocheTablet/>
           <section className="hidden mb-38 justify-between items-start gap-x-5 hd:flex">
-            <div className="h-fit border-8 relative rounded-4xl border-brown-logo overflow-hidden hd:w-117.5">
-              <Image src="/jpg/portrait-sophie-bugnard-2.jpeg" width={500} height={400} alt="Sophie Bugnard, docteure en pharmacie, conseillère en nutrition"/>
+            <div className="h-76 border-4 relative rounded-4xl border-brown-logo overflow-hidden hd:w-117.5">
+              <Image src="/jpg/portrait-sophie-bugnard-large.jpeg" width={500} height={400} alt="Sophie Bugnard, docteure en pharmacie, conseillère en nutrition"/>
             </div>
-            <article className="flex flex-col gap-y-5">
+            <article className="flex flex-col justify-between gap-y-5 h-full">
               <div className="relative min-w-1/3">
                 {/* <FrameRoundCorner width={600} height={435} className="absolute -top-28 -z-10"/> */}
                 <p className="bg-white font-ysabeau text-xl text-justify indent-3 leading-7 border-2 border-green-logo rounded-2xl px-5 py-3">
