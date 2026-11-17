@@ -5,5 +5,5 @@ export type IdForEmail = {
   telephone: string,
   raison: string
   contactByEmail: boolean,
-  docteur: string
+  message: string
 }

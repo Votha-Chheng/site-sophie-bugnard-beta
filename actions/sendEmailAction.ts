@@ -26,18 +26,20 @@ export const sendEmailAction = async(prevState: ServiceResponse<any>, formData: 
     const data = parsedData.data as IdForEmail
 
     const res = await resend.emails.send({
-      to: "cabinetdentaire.lenvolee@gmail.com",
-      from: "Site web Cabinet dentaire l'Envolée <no-reply@cabinetdentaire-lenvolee.fr>",
-      subject: "Demande de rendez-vous",
-      text: `Ci-joint, une demande rendez-vous d'une personne nommée ${data.nom} ${data.prenom}.\nLa personne souhaite entrer en contact avec : ${data.docteur === "Peu importe" ? "n'importe quel dentiste du cabinet": data.docteur}. \nN° de téléphone : ${data.telephone}. \nAdresse e-mail : ${data.email}. \nRaison du RDV : ${data.raison}. \n\nLa personne souhaite être recontactée par ${data.contactByEmail ? "e-mail" : "téléphone"}.`,
-      html: `<p>Veuillez trouvez ci-joint une demande rendez-vous d'une personne nommée ${data.nom} ${data.prenom}</p>
-      <p>La personne souhaite entrer en contact avec : ${data.docteur === "Peu importe" ? "n'importe quel dentiste du cabinet": data.docteur}.</p>
+      to: [process.env.EMAIL_TO_SEND as string],
+      from: "sophie-bugnard-nutrition.fr <onboarding@resend.dev>",
+      subject: `${data.raison} - ${data.nom} ${data.prenom}`,
+      text: `Ci-joint, une ${data.raison} d'une personne nommée ${data.nom} ${data.prenom}.\nN° de téléphone : ${data.telephone}. \nAdresse e-mail : ${data.email}.\nLa personne souhaite être recontactée par ${data.contactByEmail ? "e-mail" : "téléphone"}.`,
+      html: `<p>Veuillez trouvez ci-joint une ${data.raison} d'une personne nommée ${data.nom} ${data.prenom}</p>
       <p>N° de téléphone : ${data.telephone}.</p>
       <p>Adresse e-mail : ${data.email}.</p>
       <p>Raison du RDV : ${data.raison}.</p>
+      <p>Message : ${data.message}.</p>
       <p>La personne souhaite être recontactée par ${data.contactByEmail ? "e-mail" : "téléphone"}.</p>
       `
     })
+
+    console.log('line42 sendEmailAction', res)
 
     if(res.error) {
       return {

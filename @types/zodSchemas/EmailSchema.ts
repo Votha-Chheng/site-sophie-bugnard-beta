@@ -1,21 +1,19 @@
 import { z } from "zod";
 
 export const EmailSchema = z.object({
-  docteur: z.string().min(1,"Contact de dentiste nécessaire."),
-  nom: z.string().min(1,"Le nom est nécessaire."),
-  prenom: z.string().min(1,"Le prénom est nécessaire."),
-  email: z.string().min(1, "E-mail nécessaire.").email({message: "L'e-mail est de la forme exemple@xyz.com"}),
-  raison: z.string().min(1,"La raison du rdv est nécessaire."),
-  telephone: z.string({
-    //required_error: 'Le numéro de téléphone doit comporter 10 chiffres.',
-    //invalid_type_error: 'Le numéro de téléphone doit comporter des chiffres.',
-  })
-  .refine((val) => {
-    console.log(val)
-    for(let i=0; i<val.length; i++){
-      if(!Boolean(+i) && +i !==0) return false
-    }
-    return val.toString().length === 10
-  }, 'Le numéro de téléphone doit comporter 10 chiffres.'),
+  nom: z.string().min(1, "Le nom est nécessaire."),
+  prenom: z.string().min(1, "Le prénom est nécessaire."),
+  // Utilisation du validateur global z.email() avec personnalisation de l'erreur
+  email: z.email({ error: "L'e-mail doit être de la forme exemple@xyz.com" }),
+  raison: z.enum(["demande de rendez-vous", "demande de renseignements"], {
+    error: "Veuillez sélectionner une raison valide.",
+  }),
+  message: z.string().min(1, "Un message est nécessaire."),
+  telephone: z
+    .string()
+    .refine((val) => {
+      console.log(val);
+      return /^\d{10}$/.test(val);
+    }, 'Le numéro de téléphone doit comporter 10 chiffres.'),
   contactByEmail: z.coerce.boolean(),
 })

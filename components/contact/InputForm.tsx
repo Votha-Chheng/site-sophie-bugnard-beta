@@ -20,7 +20,7 @@ const InputForm = (props: Props) => {
 
   return (
     <div className={`flex flex-col desktop:flex-row items-baseline gap-2 mt-5 my-10`}>
-      <Label htmlFor={name} className={`mobile:px-2 tablet:whitespace-nowrap desktop:text-lg ${lato.className}`} aria-label='Nom'>{label} :</Label>
+      <Label htmlFor={name} className={`mobile:px-2 tablet:whitespace-nowrap desktop:text-lg font-bold ${lato.className}`} aria-label='Nom'>{label} :</Label>
       <div className='w-full relative'>
         <Input 
           type={type} 
