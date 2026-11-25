@@ -27,7 +27,7 @@ export const sendEmailAction = async(prevState: ServiceResponse<any>, formData: 
 
     const res = await resend.emails.send({
       to: [process.env.EMAIL_TO_SEND as string],
-      from: "sophie-bugnard-nutrition.fr <contact@sophie-bugnard-nutrition.fr>",
+      from: "sophie-bugnard-nutrition.fr <no-reply@cabinetdentaire-lenvolee.fr>",
       subject: `${data.raison} - ${data.nom} ${data.prenom}`,
       text: `Ci-joint, une ${data.raison} d'une personne nommée ${data.nom} ${data.prenom}.\nN° de téléphone : ${data.telephone}. \nAdresse e-mail : ${data.email}.\nLa personne souhaite être recontactée par ${data.contactByEmail ? "e-mail" : "téléphone"}.`,
       html: `<p>Veuillez trouvez ci-joint une ${data.raison} d'une personne nommée ${data.nom} ${data.prenom}</p>
