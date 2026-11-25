@@ -15,7 +15,7 @@ const Presentation = (props: PresentationProps) => {
       <div className={`relative w-100 h-125 ${className}`}>
         <div className='absolute top-10 left-0 h-50 w-50 rounded-full bg-blue-logo hd:block hidden'/>
         <Image 
-          src={`/jpg/portrait-sophie-bugnard-large-square.jpeg`} 
+          src={`/jpg/portrait-sophie-bugnard-2-square.jpeg`} 
           alt="Portrait Sophie Bugnard docteure en pharmacie" 
           width={196} 
           height={196} 
